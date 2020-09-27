@@ -1,0 +1,16 @@
+Long press on a word while reading starts a text selection
+Swipe on the screen to turn pages.
+Use Seek bar provided at the footer of the page to navigate through pages. 
+1st  Back to shelf
+2nd  Allows to change the font size.
+3rd  Theme
+4th  Sets the brightness of the screen
+5th  Scribbling on book.(Read to write mode)
+6th  Changes from read mode to write mode.
+7th  Creates notes for a book.
+8th  Click on the 'bookmark icon' on the page to bookmark it or remove a bookmarked page.
+9th  In order to jump to a particular page click on the 'go to' text area.
+10th  Table Of Contents.
+11th  Search with in a book.
+Use 'Google' to search word in google.
+You can find the meaning of the word to be searched with the 'Aa' button provided in the search area.

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/exam_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#81418c"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/quizzard"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <FrameLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="1200dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/exam_paper_bg" >
+
+        <TextView
+            android:id="@+id/empty_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="280dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#81418c"
+            android:textSize="25dp" />
+
+        <ListView
+            android:id="@+id/examsList"
+            android:layout_width="1060dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="60dp"
+            android:cacheColorHint="#F8F8F7"
+            android:clickable="true"
+            android:dividerHeight="5dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/exam_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/Exam_list"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/textView1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/exam_name"
+            android:layout_width="198dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="65dp"
+            android:drawableBottom="@drawable/exam_grid_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="90dp"
+            android:text="Exam"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_name"
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0dp"
+            android:drawableBottom="@drawable/exam_grid_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:text="@string/subject"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exam_type"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:drawableBottom="@drawable/exam_grid_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="80dp"
+            android:text="@string/exam_category_list"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exam_duration"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:drawableBottom="@drawable/exam_grid_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:text="@string/duration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/exam_status"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawableBottom="@drawable/exam_grid_dark"
+            android:gravity="center_vertical"
+            android:paddingLeft="100dp"
+            android:text="@string/status"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/examMenu"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/menu_btn" />
+
+    <ImageView
+        android:id="@+id/refreshExamList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="37dp"
+        android:src="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/lasalle_logo"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/la_salle_logo" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/chatScreen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/chat_bg" >
+
+        <ImageView
+            android:id="@+id/la_salle_logo"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <Button
+            android:id="@+id/chat_menu_button"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/menu_btn" />
+
+        <TextView
+            android:id="@+id/Chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="CHAT"
+            android:textColor="@android:color/white"
+            android:textSize="30dip"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chatScreen_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chat_list_bg" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <WebView
+                android:id="@+id/chat_web_UI"
+                android:layout_width="1150dp"
+                android:layout_height="643dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+            </WebView>
+
+            <TextView
+                android:id="@+id/Chat_no_network"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Please check your internet connection"
+                android:textColor="@android:color/white"
+                android:textSize="30dip"
+                android:textStyle="normal" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/refreshChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/frameLayout1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/refresh" >
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

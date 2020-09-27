@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:id="@+id/dialoge_layout"
+    android:layout_height="200dp"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:src="@drawable/user_image" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/user_image"
+        android:text="Are you sure you want to submit attendace?"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/dialogue_no"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/dialogue_yes"
+        android:layout_alignBottom="@+id/dialogue_yes"
+        android:layout_alignRight="@+id/text" />
+
+    <Button
+        android:id="@+id/dialogue_yes"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/text"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="35dp" />
+
+</RelativeLayout>

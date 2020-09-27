@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/faq_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/faq_top_bar"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="FAQs"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/la_salle_logo" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnPanel"
+        android:layout_width="1000dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:text="How To"
+        android:textColor="#444444" />
+
+    <LinearLayout
+        android:id="@+id/layoutPanel1"
+        android:layout_width="1000dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnPanel"
+        android:layout_below="@+id/btnPanel"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/faq_inner_highlightbg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/faqText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Q.How to view single and double page layouts?"
+            android:textColor="#000000"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="A.Hold the screen in Landscape to view single page and to view double pages hold the screen in portraite."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Q.How to download books?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="A.Go to library and click select the book which you want to download from the scroll view and click on the download button."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPane2"
+        android:layout_width="1000dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layoutPanel1"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:text="Library"
+        android:textColor="#444444" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/layoutPanel2"
+        android:layout_width="1000dp"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnPane2"
+        android:layout_below="@+id/btnPane2"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/faq_inner_highlightbg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/faqText5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Q.How to delete books?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="A.Go to Myshelf and click on the red Icon."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Q.Is Internet connection required to download and view the books?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Internet connection is required to download the books once the books are downloaded no need of Internet connection to view the book."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPane3"
+        android:layout_width="1000dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnPane4"
+        android:layout_below="@+id/layoutPanel2"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:text="My Account"
+        android:textColor="#444444" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/layoutPanel4"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnPane3"
+        android:layout_below="@+id/btnPane4"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/faq_inner_highlightbg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/faqText11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="About Pressmart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pressmart gives you powerful digital publishing capabilities with an on-demand platform, advanced content management tools and an industry-grade cloud hosting infrastructure."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="contact"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="3rd Floor, MJR Arcade, Khanamet, Gurukul Society, Landmark: Near Meridian School, Madhapur, Hyderabad - 500081, Telangana."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPane4"
+        android:layout_width="1000dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layoutPanel3"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:text="Pressmart"
+        android:textColor="#444444" >
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/layoutPanel3"
+        android:layout_width="1000dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btnPane4"
+        android:layout_below="@+id/btnPane3"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/faq_inner_highlightbg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/faqText9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Q.How to signOut?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/faqText10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="A.Click on the menu icon and select the Lougout item."
+            android:textColor="#343434"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPane2"
+        android:layout_alignRight="@+id/btnPane2"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/faq_drop_down" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPane3"
+        android:layout_alignRight="@+id/btnPane3"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/faq_drop_down" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPane4"
+        android:layout_alignRight="@+id/btnPane4"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/faq_drop_down" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPanel"
+        android:layout_alignRight="@+id/layoutPanel1"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/faq_drop_down" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/LasallemenuButton"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/menu_btn" />
+
+</RelativeLayout>

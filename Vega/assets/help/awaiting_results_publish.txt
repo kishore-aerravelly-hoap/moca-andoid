@@ -1,0 +1,1 @@
+Select a test from the left panel, select a student from the right panel and publish the result.

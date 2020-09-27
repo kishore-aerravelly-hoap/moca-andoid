@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#262626" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="330dp"
+            android:text="@string/Analytics_list"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="21dp"
+            android:typeface="sans" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="1200dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="140dp"
+        android:layout_toRightOf="@+id/relativeLayout3"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/analytics"
+            android:layout_width="550dp"
+            android:layout_height="313dp"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/chart8_empty_analytics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="169dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/no_data"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/FrameLayout1"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_back"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/chart8_get_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/analytics_button_shape"
+            android:text="Get Chart"
+            android:textColor="#000000" />
+
+        <RelativeLayout
+            android:id="@+id/chart8_spinners_layout"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/chart8_grade"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="23dp" />
+
+            <Spinner
+                android:id="@+id/chart8_section"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/chart8_grade" />
+
+            <Spinner
+                android:id="@+id/chart8_student"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/chart8_section" />
+
+            <Spinner
+                android:id="@+id/chart8_subject"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/chart8_student" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/abbrevations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout3"
+        android:layout_alignLeft="@+id/frameLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="29dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/chart_name_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout"
+        android:layout_alignTop="@+id/relativeLayout3"
+        android:gravity="center_vertical|center_vertical"
+        android:text="PerformanceComparisionOfSectionsChartActivity"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+After creating a test approve the test from My Approval screen.
+You can view the list of tests to be approved from the Awaiting Approvals screen.
+You can publish the test approved from the Test Publish screen.
+Rejected tests screen will show you the list of tests rejected.

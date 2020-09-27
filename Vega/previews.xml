@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Config1"
+        activity="com.pearl.activities.CreateExamStepThree"
+        config="layout-sw800dp-w1280dp-h800dp-xlarge-long-land-notnight-mdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x800-v17"
+        device="10.1in WXGA (Tablet)"
+        devicestate="Landscape"
+        target="Android 4.2"
+        theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+    </preview>
+
+</previews>

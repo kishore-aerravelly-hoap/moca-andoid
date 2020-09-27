@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="#81418c" >
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Subject"
+            android:textSize="18px" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/exam_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/subject"
+            android:layout_centerHorizontal="true"
+            android:text="Exam Title"
+            android:textSize="17sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject"
+            android:layout_centerHorizontal="true"
+            android:text="School"
+            android:textSize="15px" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/student_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/school"
+            android:layout_centerHorizontal="true"
+            android:text="Grade" >
+        </TextView>
+        <!-- Making the back to shelf icon as invisible as we are not providing the feature of Open Book examination -->
+
+        <ImageView
+            android:id="@+id/backToShelf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/exam_title"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/backtoshelf"
+            android:visibility="gone" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/student"
+            android:layout_alignBottom="@+id/student"
+            android:layout_marginRight="179dp"
+            android:layout_toLeftOf="@+id/student"
+            android:text="Marks 100"
+            android:textSize="13sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/la_salle_logo" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/questions_layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        android:background="#b87bc2" >
+
+        <ListView
+            android:id="@+id/questionsList"
+            android:layout_width="950dp"
+            android:layout_height="fill_parent"
+            android:dividerHeight="1px" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/approve_reject"
+            android:layout_width="330dp"
+            android:layout_height="600dp"
+            android:background="#b87bc2" >
+
+            <Button
+                android:id="@+id/approve_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="31dp"
+                android:background="#21B652"
+                android:text="Approve" >
+            </Button>
+
+            <Button
+                android:id="@+id/reject_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/approve_button"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/approve_button"
+                android:background="#e8112d"
+                android:text="Reject" >
+            </Button>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/approve_button"
+                android:layout_marginTop="126dp"
+                android:hint="Comments"
+                android:text="" >
+
+                <requestFocus>
+                </requestFocus>
+            </MultiAutoCompleteTextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/questions_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#81418c" >
+
+        <RelativeLayout
+            android:id="@+id/questions_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="85dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="TFQ : True or False Question"
+                android:textAppearance="?android:attr/textAppearanceSmall" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="83dp"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="SAQ : Short Answer Question"
+                android:textAppearance="?android:attr/textAppearanceSmall" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="263dp"
+                android:text="OQ : Ordering Question"
+                android:textAppearance="?android:attr/textAppearanceSmall" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

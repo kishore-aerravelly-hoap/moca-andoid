@@ -1,0 +1,11 @@
+Pass/Fail percentage across sections
+Pass/Fail percentage across sections for a subject
+Pass/Fail percentage across grades
+Performance of a student in all the subjects for an exam type
+Pass/Fail percentage for a section
+Count of students who are in a particular grade range
+Performance of a student in all the exam types
+Performance comparison among sections for a subject for all the exams
+Performance analysis of students in a section
+Performance analysis of students across sections
+Year wise comparison

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="341dp"
+    android:layout_height="342dp"
+    android:layout_gravity="center"
+    android:background="@drawable/bookmark_background" >
+
+    <EditText
+        android:id="@+id/createBookmarkDesc"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bookmark_notes_bg"
+        android:gravity="top"
+        android:hint="@string/bookmarkHint"
+        android:inputType="textMultiLine|textCapSentences|textAutoCorrect|textAutoComplete"
+        android:singleLine="false" />
+    <!-- android:inputType="textAutoCorrect|textCapSentences" -->
+
+</RelativeLayout>

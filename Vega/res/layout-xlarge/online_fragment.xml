@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frags"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/shelf_header">
+
+    <RelativeLayout
+        android:id="@+id/online_frame_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="119dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/la_salle_logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/eReader_Store_name"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="normal" >
+        </TextView>
+
+        <Button
+            android:id="@+id/online_menu_button"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="34dp"
+            android:background="@drawable/menu_btn"
+            android:visibility="visible" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/backToshelfFromOnline"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/back_to_sibrary"
+            android:visibility="visible" >
+        </ImageView>
+
+        <ProgressBar
+                android:id="@+id/refreshProgressBar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/Chat_title"
+            	android:layout_marginRight="43dp"
+                android:layout_toLeftOf="@+id/online_help"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/refreshOnline"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/Chat_title"
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/online_help"
+            android:src="@drawable/refresh"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/online_help"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/online_menu_button"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/help" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/online_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp" 
+            android:background="@drawable/online_download_img"
+            android:layout_below="@+id/online_frame_layout">
+        
+        <ImageView
+            android:id="@+id/onlineCoverImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp" 
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="3dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/empty_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="840dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/empty_download"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+	            <TextView
+	                android:id="@+id/bookDescription"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="4dp"
+	                android:textColor="@android:color/white"
+	                android:textSize="24sp"
+	                android:visibility="invisible"/>
+	
+	            <TextView
+	                android:id="@+id/partial_download"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="3dp"
+	                android:layout_marginBottom="4dp"
+	                android:text="@string/book_download_problem"
+	                android:textColor="@android:color/darker_gray"
+	                android:textSize="24sp"
+	                android:visibility="invisible"/>
+	            
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    <GridView
+        android:id="@+id/books_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/online_ll"
+        android:gravity="center"
+        android:columnWidth="200dp"
+        android:horizontalSpacing="5dip"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="40dip">
+        
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/attendance_bg" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/la_salle_logo" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/LasallemenuButton"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/menu_btn" />
+
+    <TextView
+        android:id="@+id/Chat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="ATTENDANCE"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/attendance_line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/Chat_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/attendance_tab_bar" >
+        
+         <ProgressBar
+                android:id="@+id/attendance_refresh_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@+id/refreshAttendance"
+                android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/refreshAttendance"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/attendance_help"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:src="@drawable/refresh" />
+
+        <ImageView
+            android:id="@+id/attendance_help"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="73dp"
+            android:src="@drawable/help" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Attendance_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Attendance_title" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="380dp"
+            android:layout_height="600dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/attendance_bottom_darkbar" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="80dp"
+                    android:src="@drawable/attendance_arrow_down"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/attendance_arrow_side"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sortByName"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/textView3"
+                    android:layout_marginRight="210dp"
+                    android:layout_toLeftOf="@+id/textView3"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/sortById"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="110dp"
+                    android:paddingTop="3dp"
+                    android:text="Id"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="123dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/sortById"
+                    android:text="Status"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/attendanceBody"
+                android:layout_width="300dp"
+                android:layout_height="560dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <ListView
+                    android:id="@+id/attendance_list"
+                    android:layout_width="362dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp" >
+                </ListView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/attendance_bottom_darkbar" />
+
+            <View
+                android:layout_width="380dp"
+                android:layout_height="1dp"
+                android:background="@drawable/attendance_bottom_darkbar" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="3dp"
+                android:text="Student"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/relativeLayout2"
+            android:layout_toRightOf="@+id/relativeLayout2"
+            android:background="@drawable/attendance_sidepanel"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout12"
+                android:layout_width="150dp"
+                android:layout_height="159dp" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="380dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/attendance_bottom_darkbar" >
+                </View>
+
+                <TextView
+                    android:id="@+id/attendance_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/subjectText"
+                    android:paddingTop="5dp"
+                    android:text="Subname"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/subjectText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Subject  :"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/totAbsent"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/totAbsentText"
+                    android:layout_alignRight="@+id/attendance_subject"
+                    android:layout_alignTop="@+id/totAbsentText"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/strengthText"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/attendance_subject"
+                    android:layout_toLeftOf="@+id/attendance_subject"
+                    android:text="Total Strength"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/totAbsentText"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view1"
+                    android:layout_alignRight="@+id/strengthText"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Total Absent"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/totPresentText"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Total Present"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/totPresent"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/totPresentText"
+                    android:layout_alignTop="@+id/totPresentText"
+                    android:layout_toRightOf="@+id/strengthText"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/strength"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/attendance_subject"
+                    android:layout_below="@+id/attendance_subject"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="72dp" >
+
+                <TextView
+                    android:id="@+id/sectionText"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grade"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Section:"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/gradeText"
+                    android:layout_alignBottom="@+id/gradeText"
+                    android:layout_toRightOf="@+id/gradeText"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/Section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/sectionText"
+                    android:layout_alignBottom="@+id/sectionText"
+                    android:layout_alignLeft="@+id/grade"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/gradeText"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Grade :"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/attendanceFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" >
+
+                    <View
+                        android:id="@+id/view12"
+                        android:layout_width="380dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/attendance_bottom_darkbar" />
+
+                    <Button
+                        android:id="@+id/submitAtt"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/feedback_submit_btn" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/approval_list"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:cacheColorHint="#AAC6F4"
+        android:divider="@drawable/divider"
+        android:footerDividersEnabled="true"
+        android:listSelector="@drawable/selected_bg"
+        android:overScrollMode="ifContentScrolls" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/result_publish_no_exams_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#444"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

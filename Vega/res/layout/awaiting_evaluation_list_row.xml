@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/awaiting_exam_title"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Exam Title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/awaiting_exam_category"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Category"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/awaiting_subject"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Subject"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/awaiting_exam_date"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Exam Held On"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/awaitng_grade"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Grade"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/awaitng_section"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Section"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/awaitng_expired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E" 
+        android:textColor="#FE2626"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#81418c"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" >
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Subject"
+            android:textSize="18px" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/exam_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/subject"
+            android:layout_centerHorizontal="true"
+            android:text="Exam Title"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="15px" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/student_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/school"
+            android:layout_centerHorizontal="true"
+            android:text="Grade" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/backToShelf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/exam_title"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/backtoshelf"
+            android:visibility="gone" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/student_grade"
+            android:layout_alignRight="@+id/student"
+            android:text="01:12:35"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/exam_title"
+            android:layout_marginRight="23dp"
+            android:text="Student Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+
+        <Button
+            android:id="@+id/backToQuestionsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="89dp"
+            android:layout_toLeftOf="@+id/student"
+            android:text="Back to Questions List" >
+        </Button>
+
+        <TextView
+            android:id="@+id/marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/student"
+            android:layout_alignBottom="@+id/student"
+            android:layout_alignLeft="@+id/backToQuestionsList"
+            android:layout_marginLeft="32dp"
+            android:text="Marks 100"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/la_salle_logo" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="321dp"
+        android:layout_height="501dp"
+        android:background="#81418c"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/question_layout"
+        android:layout_width="800dp"
+        android:layout_height="600dp"
+        android:layout_weight="1"
+        android:background="@drawable/exam_paper_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/controls_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10px" >
+
+        <TextView
+            android:id="@+id/questionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/prev_button"
+            android:text="1/15"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/quesBookmark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/save_button"
+            android:background="#444444"
+            android:src="@drawable/ques_unbookmarked" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@+id/quesListBookmark"
+            android:layout_toRightOf="@+id/marked"
+            android:text="TextView" >
+        </TextView>
+
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quesListBookmark"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="Previous" >
+        </Button>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quesListBookmark"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@+id/questionNo"
+            android:text="Next" >
+        </Button>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quesListBookmark"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/submit_button"
+            android:background="@drawable/nb_add_save_btn" >
+        </Button>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quesListBookmark"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/submit_exam_btn" >
+        </Button>
+
+        <CheckBox
+            android:id="@+id/marked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/next_button"
+            android:text="Marked" >
+        </CheckBox>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="1000dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" >
+
+        <EditText
+            android:id="@+id/testName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="117dp"
+            android:ems="10"
+            android:hint="Test name" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/grade_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/testName"
+            android:layout_below="@+id/testName"
+            android:layout_marginTop="67dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/subject_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/grade_spinner"
+            android:layout_toRightOf="@+id/testName"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/section_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/subject_spinner"
+            android:layout_alignBottom="@+id/subject_spinner"
+            android:layout_marginLeft="124dp"
+            android:layout_toRightOf="@+id/subject_spinner"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/start_date_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/grade_spinner"
+            android:layout_below="@+id/grade_spinner"
+            android:layout_marginTop="123dp"
+            android:ems="10"
+            android:hint="start date"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/end_date_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/start_date_view"
+            android:layout_alignBottom="@+id/start_date_view"
+            android:layout_toRightOf="@+id/subject_spinner"
+            android:ems="10"
+            android:hint="end date"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/duration_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/start_date_view"
+            android:layout_below="@+id/start_date_view"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:hint="duration"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/submit_stepone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/duration_view"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="53dp"
+            android:text="submit" />
+    </RelativeLayout>
+
+</RelativeLayout>

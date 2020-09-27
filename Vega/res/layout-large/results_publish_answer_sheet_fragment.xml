@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Color set for the GUI designer -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/plainblue" >
+
+    <TextView
+        android:id="@+id/results_publish_examName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="296dp"
+        android:text="ExamName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_publish_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/results_publish_examName"
+        android:layout_below="@+id/results_publish_examName"
+        android:layout_marginTop="21dp"
+        android:text="Section &amp; Grade" />
+
+    <TextView
+        android:id="@+id/results_publish_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/results_publish_section"
+        android:layout_marginTop="39dp"
+        android:text="Questions"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_publish_Marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/results_publish_section"
+        android:text="totalMarks"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/results_publish_Marks"
+        android:text="Time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/results_publish_AnswerSheet"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/results_publish_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results_publish_time"
+        android:layout_alignBottom="@+id/results_publish_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="168dp"
+        android:text="startDate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/results_publish_lasalleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/results_publish_time"
+        android:text="La Salle Green Hills" />
+
+    <TextView
+        android:id="@+id/results_publish_endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/results_publish_startDate"
+        android:layout_below="@+id/results_publish_startDate"
+        android:text="EndDate"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

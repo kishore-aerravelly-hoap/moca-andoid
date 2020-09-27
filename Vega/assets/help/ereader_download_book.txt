@@ -1,0 +1,4 @@
+Select a book from the list of books provided and click on the 'Download' button to the right to download the book.
+Click 'Refresh' to get the latest books list
+After downloading a book click on 'View' to view the book 
+Clicking on 'Library' to view downloaded books

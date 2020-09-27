@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tc_mainbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/tc_topbar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/addQuestions"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/create_test_step2_help"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/examMenu"
+            android:src="@drawable/help" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tc_contentholder_bg"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/validQtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/questionType"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/questiontype"
+                android:layout_width="200dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/fetch_from_questionbank"
+                android:layout_width="142dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/tc_button_background"
+                android:text="@string/ffq"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_below="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:id="@+id/validBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/book"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/book"
+                android:layout_width="120dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/validChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/create_Chapter"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:textSize="12sp"/>
+
+            <Spinner
+                android:id="@+id/chapter"
+                android:layout_width="120dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="3dp"/>
+
+            <LinearLayout
+                android:id="@+id/marksAllotedlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/validMarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/star"
+                    android:textColor="#FF3300"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/create_mark"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/marksAlloted"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="2dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:maxLength="3"
+                    android:textColor="#000000"
+                    android:visibility="visible" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </TableRow>
+
+       <LinearLayout
+           android:id="@+id/questionlayout"
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           android:layout_above="@+id/step2_bottom"
+           android:layout_below="@+id/tableRow2"
+           android:layout_gravity="center_vertical|center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="5dp"
+           android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/validQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/star"
+                    android:textColor="#FF3300"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ques"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/create_question"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/questioneditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="top"
+                    android:hint="Your question here.."
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal" 
+                    android:textSize="12sp">
+                    
+                </EditText>
+            </TableRow>
+
+            <TextView
+                android:id="@+id/fbextext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="@string/create_Note"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:visibility="gone" />
+            
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp" >
+              
+            <TextView
+                android:id="@+id/ansstr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/star"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FF3300"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/create_answer"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:id="@+id/answerlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+		</TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step2_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" 
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/preview"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/tc_button_background"
+                android:text="@string/create_ptp"
+                android:textSize="11sp" />
+            
+            <TextView
+                android:id="@+id/validMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mandatory_message"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="#FF3300" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:textSize="12sp"
+                android:background="@drawable/tc_button_background"
+                android:text="@string/create_add" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginTop="5dip"
+                android:textSize="12sp"
+                android:background="@drawable/tc_button_background"
+                android:text="@string/create_done_with_adding" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

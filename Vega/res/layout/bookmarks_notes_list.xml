@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/resumeImageLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#e7e5cf"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <ImageView
+                android:id="@+id/resume"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/resume" />
+
+            <Button
+                android:id="@+id/toggleTOCButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="0dp" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bookBlock"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/listLeftPage"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/spiral_page_left" >
+
+            <ImageView
+                android:id="@+id/listCoverPage"
+                android:layout_width="378dp"
+                android:layout_height="433dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="140dp"
+                android:src="@drawable/book_coverpage" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/listSpiral"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.038"
+            android:src="@drawable/spiral" />
+
+        <LinearLayout
+            android:id="@+id/bookmarkListBlock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.59"
+            android:background="@drawable/spiral_page_right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/notesAndBookmarksBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Bookmarks"
+                    android:textColor="#c40b0b" />
+
+                <TextView
+                    android:id="@+id/bookmarksNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:text="@string/bookmarkAlert"
+                    android:textColor="#000000"
+                    android:visibility="invisible" />
+
+                <ListView
+                    android:id="@+id/bookmarkListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginRight="45dp"
+                    android:cacheColorHint="#FFFFFF"
+                    android:divider="#94734f"
+                    android:dividerHeight="1px"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp" />
+                <!-- Preview: listitem=@layout/bookmarks_list_row.xml -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Notes"
+                    android:textColor="#c40b0b" />
+
+                <TextView
+                    android:id="@+id/notesNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/notesAlert"
+                    android:textColor="#000000"
+                    android:visibility="invisible" />
+
+                <ListView
+                    android:id="@+id/notesListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="45dp"
+                    android:cacheColorHint="#FFFFFF"
+                    android:divider="#94734f"
+                    android:dividerHeight="2px"
+                    android:footerDividersEnabled="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp" />
+                <!-- Preview: listitem=@layout/notes_list_row.xml -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableOfContentsBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Table of Contents"
+                    android:textColor="#c40b0b" />
+
+                <ListView
+                    android:id="@+id/tableOfContentsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="45dp"
+                    android:cacheColorHint="#FFFFFF"
+                    android:divider="#94734f"
+                    android:dividerHeight="1px"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="35dp"
+                    android:paddingTop="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoBlock"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/listImageLayout"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/pressmartLogo"
+            android:text="Powered by"
+            android:textColor="#000000"
+            android:textSize="11sp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/pressmartLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/pressmart_logo" >
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+Click on the buttons in the top right to navigate between list and grid view.
+Click on the book to read the book.
+Use 'Store' icon to view/download books.

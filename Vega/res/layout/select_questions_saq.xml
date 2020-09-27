@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="875dp"
+        android:id="@+id/db_question_layout"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        
+       >
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/question_checkBox"
+        android:layout_width="wrap_content"
+        style="@android:style/Widget.CompoundButton.CheckBox"
+        android:layout_height="wrap_content"
+        
+        />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res\layout\actionbar_readbook_lay.xml" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src\com\pearl\activities\ChatActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="UnusedResources" severity="fatal" />
+    <issue id="UseSparseArrays">
+        <ignore path="src\com\pearl\activities\TeacherPublishList.java" />
+    </issue>
+</lint>

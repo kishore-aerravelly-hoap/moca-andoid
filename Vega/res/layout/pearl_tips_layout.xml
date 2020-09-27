@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="250dp"
+    android:id="@+id/tips_layout"
+    android:orientation="vertical"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/next_help"/>
+
+    <ImageView
+        android:id="@+id/previous"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/next"
+        android:layout_alignBottom="@+id/next"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/previous_help" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/previous"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="55dp"
+        android:text="Tap on the list to view all the options in the Match the following/Ordering questions"
+        android:textSize="18sp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

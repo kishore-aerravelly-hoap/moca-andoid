@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b87bc2"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#81418c" 
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:id="@+id/exam_title_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:text="Exam Tittle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/subject_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Subject"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/total_marks_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:text="Total Marks"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/student_name_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/exam_title_answer"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/exam_title_answer"
+            android:layout_marginRight="50dp"
+            android:maxLength="20"
+            android:text="Student Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/grade_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/student_name_answer"
+            android:layout_centerVertical="true"
+            android:text="Grade"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/start_time_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/total_marks_answer"
+            android:layout_alignBottom="@+id/total_marks_answer"
+            android:layout_alignLeft="@+id/grade_answer"
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/expandableName_answer"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/student_name_answer"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/attendance_arrow_down"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/question_list_help"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_above="@+id/grade_answer"
+            android:layout_marginRight="34dp"
+            android:layout_toLeftOf="@+id/student_name_answer"
+            android:src="@drawable/help" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/answers_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout"
+        android:layout_above="@+id/controls_layout"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/exam_paper_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_layout" >
+
+        <TextView
+            android:id="@+id/quizzard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Answer Sheet"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="Back to Exam List"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/controls_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:background="#81418c"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/total_marks_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="90dp"
+            android:text="Student total marks"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/marks_alloted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="Marks Allocated"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/marks_awarded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/total_marks_student"
+            android:layout_alignBottom="@+id/total_marks_student"
+            android:layout_marginLeft="165dp"
+            android:layout_toRightOf="@+id/marks_alloted"
+            android:text="Marks Awarded"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

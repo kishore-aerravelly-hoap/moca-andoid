@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="school_name">MOCA School</string>
+	<!-- Global -->
+	<string name="app_name">MOCA</string>
+	<string name="versionSupport">This books looks to be in a different format, we
+		are working hard to have a newer version of App in place that would
+		help you in reading this book.</string>
+	<string name="no">No</string>
+	<string name="yes">Yes</string>
+	<string name="loadingPage">Please be patient. Loading page...</string>
+	<!-- Book Tabs -->
+	<string name="bookOpen">Please have patience, we are opening your book.
+		Soon you can enjoy reading.</string>
+	<string name="XMlBookTypeTitle">This books appears to be in different format. To be
+		specific it is an XML version.</string>
+	<string name="deleteBookTitle">Delete!</string>
+	<string name="confirmationMessage">Are you sure, you want to proceed with deleting the
+		book. Once confirmed, this book will no longer be available in your
+		shelf. You will have to download it again to read offline. Please note
+		all bookmarks / notes associated with this book would also be lost.</string>
+	<string name="book_download_problem">There was some problem while downloading. If you wish to download again please click on "redownload" button.</string>
+	<string name="empty_shelf_alert">You didn\'t download any book. Please go to the store to download.</string>
+	<string name="shelf_search_empty">Please download book to search</string>
+	<string name="shelf_search_no_match">No book found that matched your search criteria.</string>
+	<string name="deleteBook">Book you have selected is being deleted.</string>
+	<string name="confirm_redownload_title">Books list missing!!</string>
+	<string name="confirm_redownload_msg">Looks like you have changed your tablet, there are
+		few books which you have downloaded earlier but do not exists on this
+		tablet. Would you like to sync book download ?</string>
+	<string name="confirm_redownload_books_title">Few books are missing!!</string>
+	<string name="downloadMissingBooks">Looks like you have changed your tablet, there are
+		few books which you have downloaded earlier but do not exists on this
+		tablet. Would you like to sync book download ?</string>
+	<string name="removeNondownloadedFiles">Synchronizing files that are downloaded with the
+		server.</string>
+	<string name="unable_to_download_book_no_network_connection">You don\'t have internet connectivity. Please connect, so that you can download the book.</string>
+	<string name="removeBooks">Selected book is being removed from tablet. If you
+		require this in future, you can download the same from library.</string>
+	<!-- note Book -->
+	<string name="notebook_network_un_available">Please check your Internet connection and then click on the refresh button to download 
+		the list of subjects once the wifi is enabled.</string>
+	<string name="refresh_when_network_available">As you didn\'t download list of subjects please click refresh to download.</string>
+	<string name="subject_desc">Displaying notes for</string>
+	<string name="notebook_hint">Click Add to start writing your notes</string>
+	<string name="notebook_savelabel">Delete</string>
+	<string name="notebok_searchgooglelabel">Search Google</string>
+	<string name="notebook_dictionarylabel">Dictionary</string>
+	<!-- Read Book -->
+	<string name="book_parsing_error">Book you have downloaded is not according to standards please contact Admin to rectify the problem</string>
+	<string name="book_no_chapter">Book you have downloaded does not contain any chapters, please contact Admin to rectify the problem</string>
+	<string name="book_not_downloaded">You didn\'t download the book from this device. Please contact admin to rectify</string>
+	<string name="go_to_page_field_cant_be_null">Field can\'t be empty</string>
+	<string name="loginFailureMessage">Unable to login. Please check your username /
+		password and try again.</string>
+	<string name="notesHint">Just type in your thought, once done tap out side
+		of box and we would take care of rest.</string>
+	<string name="notesSaved">You rock. Your notes is saved. Continue reading
+		and have fun.</string>
+	<string name="notesAlert">Oops. You did not type anything. Please type in
+		your thought so that we can save it.</string>
+	<string name="bookmarkHint">Just type in what you think is best way to remember
+		this page, once done tap out side of box and we would take care of
+		rest.</string>
+	<string name="bookmarkSaved">Hurray. I have bookmarked your page, please
+		continue reading. You refer bookmark list to view all your bookmarks.</string>
+	<string name="bookmark_status">You have already bookmarked this page.If you wish to bookmark again please delete the bookmark and Add</string>
+	<string name="bookmarkAlert">Oops. You did not provide text for your bookmark.
+		Kindly provide relevant text so that you can search it easily in
+		future.</string>
+	<string name="feedbackAlert">Oops. You did not post your thoughts</string>
+	<string name="feedbackHint">Please post your thoughts / ideas / suggestions it
+		would be really helpful to improvise</string>
+	<string name="bookmarkDeleteStatus">You have just removed this page from bookmark list
+		of yours. You can bookmark it again by tapping the same icon.</string>
+	<string name="feedback">
+		<b>If you have any questions please let us know\n</b>
+	</string>
+	<string name="GoToPageLimt">Inavlid page Num- Please enter the number between 1 to %2$d</string>
+	<string name="EpubUnzip">As you are opening the book for the first time it will take few moments to open.</string>
+	<string name="brightness">Please drag the bar below to set brightness</string>
+	<string name="book_does_not_exists_in_local">Oops! Something unexpected happened. Please check with the support on the issues.</string>
+	<!-- Configuration -->
+	<string name="ConfigChanges">Changes have been saved successfully</string>
+	<!-- PDF VIEWER - Related -->
+	<string name="about">About</string>
+	<string name="goto_page">Go to page...</string>
+	<string name="goto_page_dialog_title">Go to page</string>
+	<string name="goto_page_go_button">Go</string>
+	<string name="rotate_page_left">Rotate left</string>
+	<string name="rotate_page_right">Rotate right</string>
+	<string name="find_text">Find...</string>
+	<string name="find_dialog_title">Find text</string>
+	<string name="find_go_button">Find</string>
+	<string name="find_cancel_button">Cancel</string>
+	<string name="clear_find_text">Clear find</string>
+	<string name="choose_file">Open...</string>
+	<string name="toggle_invert">Invert</string>
+	<string name="toggle_fine_zoom">Toggle fine zoom</string>
+	<string name="set_as_home">Set current folder as home</string>
+	<string name="go_home">Home</string>
+	<string name="cancel">Cancel</string>
+	<string name="searching_for">Searching for "%1$s"</string>
+	<string name="page_of">Page %1$d of %2$d</string>
+	<string name="options">Options</string>
+	<string name="zoom_animation">Zoom buttons</string>
+	<string-array name="zoom_animations">
+		<item>100</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="zoom_animation_labels">
+		<item>disabled</item>
+		<item>disappear</item>
+		<item>almost disappear</item>
+		<item>fade</item>
+	</string-array>
+	<string name="default_zoom_animation">2</string>
+	<string name="page_animation">Page number/count</string>
+	<string-array name="page_animations">
+		<item>100</item>
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="page_animation_labels">
+		<item>disabled</item>
+		<item>disappear</item>
+		<item>almost disappear</item>
+		<item>fade</item>
+		<item>show always</item>
+	</string-array>
+	<string name="default_page_animation">2</string>
+	<string name="fade_speed">Zoom and page fade wait</string>
+	<string-array name="fade_speeds">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+	</string-array>
+	<string-array name="fade_speed_labels">
+		<item>1 second</item>
+		<item>2 seconds</item>
+		<item>3 seconds</item>
+		<item>4 seconds</item>
+		<item>5 seconds</item>
+		<item>6 seconds</item>
+		<item>7 seconds</item>
+	</string-array>
+	<string name="default_fade_speed">7</string>
+	<string name="invert">Invert colors</string>
+	<string name="dirs_first">List directories first</string>
+	<string name="show_extension">Show .pdf extension</string>
+	<string name="orientation">Orientation</string>
+	<string name="default_orientation">0</string>
+	<string-array name="orientation_labels">
+		<item>automatic</item>
+		<item>harder to change</item>
+		<item>lock to portrait</item>
+		<item>lock to landscape</item>
+	</string-array>
+	<string-array name="orientations">
+		<item>0</item>
+		<item>3</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string name="viewer">PDF Viewer</string>
+	<string name="selector">File Chooser</string>
+	<string name="fullscreen">Fullscreen</string>
+	<string name="render_ahead">Render ahead</string>
+	<string name="render_ahead_sub">Uses more memory but faster forward scrolling.</string>
+	<string name="gray">Grayscale</string>
+	<string name="gray_sub">No colors, slightly slower, but uses less memory.</string>
+	<string name="page">Page</string>
+	<string name="color_mode">Color mode</string>
+	<string-array name="color_mode_labels">
+		<item>Normal color</item>
+		<item>Inverted color</item>
+		<item>Normal black and white</item>
+		<item>Inverted black and white</item>
+		<item>Black on yellowish</item>
+		<item>Green on black</item>
+		<item>Red on black</item>
+	</string-array>
+	<string-array name="color_modes">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
+	<string name="default_color_mode">0</string>
+	<string name="omit_images">Skip images</string>
+	<string name="vertical_scroll_lock">Vertical scroll lock</string>
+	<string name="vertical_scroll_lock_sub">To scroll horizontally, you must first move
+		horizontally 1/5 of the screen width.</string>
+	<string name="box">PDF page box type</string>
+	<string-array name="box_labels">
+		<item>ArtBox</item>
+		<item>BleedBox</item>
+		<item>CropBox</item>
+		<item>MediaBox</item>
+		<item>TrimBox</item>
+	</string-array>
+	<string-array name="boxes">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	<string name="default_box">2</string>
+	<string name="extra_cache">Extra cache memory</string>
+	<string name="extra_cache_sub">Using extra cache memory can improve scrolling
+		smoothness at the expense of stability.</string>
+	<string-array name="extra_caches">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>10</item>
+	</string-array>
+	<string-array name="extra_cache_labels">
+		<item>none</item>
+		<item>1 MB</item>
+		<item>2 MB</item>
+		<item>4 MB</item>
+		<item>6 MB</item>
+		<item>8 MB</item>
+		<item>10 MB</item>
+	</string-array>
+	<string name="default_extra_cache">0</string>
+	<string name="side_margin">Extra side margins</string>
+	<string name="default_side_margin">0</string>
+	<string-array name="margins">
+		<item>0</item>
+		<item>5</item>
+		<item>10</item>
+		<item>20</item>
+	</string-array>
+	<string-array name="margin_labels">
+		<item>none</item>
+		<item>small</item>
+		<item>medium</item>
+		<item>large</item>
+	</string-array>
+	<string name="top_margin">Space between pages</string>
+	<string name="default_top_margin">10</string>
+	<string name="remove_from_recent">Remove from recent</string>
+	<string name="delete">Delete file</string>
+	<string-array name="double_tap_actions">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="double_tap_action_labels">
+		<item>none</item>
+		<item>zoom in</item>
+		<item>zoom in or back out</item>
+	</string-array>
+	<string name="default_double_tap_action">2</string>
+	<string name="double_tap_action">Double tap action</string>
+	<string-array name="action_pairs">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>9</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+	</string-array>
+	<string-array name="action_pair_labels">
+		<item>none</item>
+		<item>screen up/down</item>
+		<item>page up/down</item>
+		<item>page prev/next</item>
+		<item>zoom 1.02X</item>
+		<item>zoom 1.05X</item>
+		<item>zoom 1.1X</item>
+		<item>zoom 1.2X</item>
+		<item>zoom 1.414X</item>
+		<item>zoom 2X</item>
+		<item>screen up/down reversed</item>
+		<item>page up/down reversed</item>
+		<item>page prev/next reversed</item>
+	</string-array>
+	<string name="volume_pair">Volume -/+ key actions</string>
+	<string name="up_down_pair">Up/Down key actions</string>
+	<string name="left_right_pair">Left/Right key actions</string>
+	<string name="zoom_pair">Zoom button actions</string>
+	<string name="long_zoom_pair">Long press zoom button actions</string>
+	<string name="right_up_down_pair">Nook Touch right up/down key actions</string>
+	<string name="top_bottom_tap_pair">Action for top/bottom tap</string>
+	<string name="default_volume_pair">1</string>
+	<string name="default_up_down_pair">1</string>
+	<string name="default_left_right_pair">2</string>
+	<string name="default_zoom_pair">7</string>
+	<string name="default_long_zoom_pair">8</string>
+	<string name="default_right_up_down_pair">1</string>
+	<string name="default_top_bottom_tap_pair">0</string>
+	<string name="hw">Hardware Specific Settings</string>
+	<string name="eink">E-ink optimizations</string>
+	<string name="nook2">Nook2 fast e-ink refresh</string>
+	<string name="disabled">Disabled</string>
+	<string name="keep_on">Keep screen on while reading</string>
+	<string name="show_zoom_on_scroll">Show zoom when scrolling</string>
+	<string name="history">Show recent files</string>
+	<!-- Quizzard -->
+	<string name="AllowedBooksAlert">You Can not open this book as this book is not allowed to be opened for the exam.</string>
+	<string name="new_Exam">You have a new exam</string>
+	<string name="empty_status">No exams scheduled for you.</string>
+	<string name="empty_status1">You are not connected to internet, please download the file once wi-fi is enabled.</string>
+	<string name="repeat_test">Repeat Test</string>
+	<string name="open_book">Open Book</string>
+	<string name="no_exams_to_be_evaluated">You do not have any test to evaluate</string>
+	<string name="correct_answer_marks">Correct Answer Marks :</string>
+	<string name="correct_answer_count">Correct Answer Count :</string>
+	<string name="wrong_answer_count">Wrong Answer Count :</string>
+	<string name="grand_total">Grand Total :</string>
+	<string name="automated_total_marks">Total Marks :</string>
+	<string name="grade">Grade</string>
+	<string name="section">Section</string>
+	<string name="exam_held_on">Test Held On</string>
+	<string name="exam_book_partial_download">Please redownload the book as it has not been downloaded properlys</string>
+	<string name="validation_multiple_schedules">Please make sure that you enter values in all fields</string>
+	<string name="underconstruction_test_name">Test</string>
+	<string name="underconstruction_sheduled_on">Scheduled on</string>
+	<string name="underconstruction_status">Action</string>
+	<string name="underconstruction_edit_test">Edit</string>
+	<string name="underconstruction_delete_test_message">Test will be deleted. You want to proceed with the action?</string>
+	<string name="underconstruction_delete_test_name">Delete</string>
+	<string name="step1_from_date_label">Starts on</string>
+	<string name="step1_test_name">Test Name</string>
+	<string name="step1_to_date_label">Ends on</string>
+	<string name="step1_duration">Duration(mins)</string>
+	<string name="step1_repeat_test">Repeat Test</string>
+	<string name="step1_open_book">Open Book</string>
+	<string name="step1_open_book_list">List of Books</string>
+	<string name="step1_check_all">Check All</string>
+	<string name="next">Next</string>
+	<string name="mandatory_message">Fields marked with * are mandatory</string>
+	<string name="first_question">You are on first question</string>
+	<string name="last_question">You are on last question</string>
+	<string name="exam_category">Exam Category</string>
+	<string name="duration">Duration(mins)</string>
+	<string name="exam_heading">Exam</string>
+	<string name="exam_category_list">Category</string>
+	<!-- Attendance -->
+	<string name="attendance_daily">Hurray ! You have taken today\'s attendance. Please come back tomorrow to take attendance.</string>
+	<string name="attendance_session_morning">Hurray ! Morning session attendance is already taken. Please come back in the afternoon session at %1$s to take the attendance.</string>
+	<string name="attendance_session_evening">Hurray ! Afternoon session attendance is already taken. Please come back tomorrow at %1$s to take the attendance.</string>
+	<string name="attendance_periodic">Hurray ! Attendance for this period is already taken. Please come back in the next period at %1$s to take the attendance.</string>
+	<string name="loading_attendance">Please wait... till the attendance loads</string>
+	<string name="submit_when_disabled">You can\'t submit the attendance as your wifi is disabled</string>
+	<!-- Chat -->
+	<string name="chat_comment">Write a comment...</string>
+	<!-- Calendar Events -->
+	<string name="events_updated">Events have been updated in the calendar.</string>
+	<!-- Epub Pagination Start -->
+	<string name="bookshelf">BookShelf</string>
+	<!-- Common Menus -->
+	<string name="str_title">Title</string>
+	<string name="str_author">Author</string>
+	<string name="str_publisher">Publisher</string>
+	<string name="str_isbn">ISBN</string>
+	<string name="str_language">Language</string>
+	<!-- Context Menus -->
+	<string name="context_shortcut">Create Shortcut</string>
+	<string name="context_delete">Delete This Item</string>
+	<!-- Option Menus -->
+	<string name="menu_import">Import</string>
+	<string name="menu_cancel">Cancel</string>
+	<string name="menu_delete">Delete</string>
+	<string name="menu_about">About</string>
+	<string name="menu_info">Info</string>
+	<string name="menu_toc">TOC</string>
+	<string name="menu_bookmark">Bookmark</string>
+	<string name="menu_settings">Settings</string>
+	<!-- Settings (brightness) -->
+	<string name="brightness_preferences">Brightness</string>
+	<string name="brightness_auto_title">Brightness Auto</string>
+	<string name="brightness_auto_summary">Check if want be a auto brightness</string>
+	<!-- Settings (appearance) -->
+	<string name="appearance_preferences">Appearances</string>
+	<string name="day_night_mode_title">Day/Night Mode</string>
+	<string name="day_night_mode_summary">Choose day/night mode.</string>
+	<string name="day_night_mode_dialog_title">Day/Night Mode</string>
+	<string name="statusbar_key">statusbar_auto</string>
+	<string name="statusbar_title">Status Bar</string>
+	<string name="statusbar_summary">Show status bar.</string>
+	<string name="font_size_title">Font Size</string>
+	<string name="font_size_summary">Changes font size.</string>
+	<string name="font_size_dialog_title">Font Size</string>
+	<string name="font_type_title">Font Type</string>
+	<string name="font_type_summary">Changes font type.</string>
+	<string name="font_type_dialog_title">Font Type</string>
+	<!-- Settings (control) -->
+	<string name="control_preferences">Controls</string>
+	<string name="fling_use_title">Fling Gesture</string>
+	<string name="fling_use_summary">You can use fling event.</string>
+	<string name="rotation_type_title">Rotation</string>
+	<string name="rotation_type_summary">Choose rotation type.</string>
+	<string name="rotation_type_dialog_title">Rotation</string>
+	<!-- Settings (misc) -->
+	<string name="misc_preferences">Misc.</string>
+	<!-- About -->
+	<string name="about_text">\
+	This program is Android eBook reader based on Monocle library.
+	Focused on your reading, expand reading area as wide as possible.
+	Simple and fast!
+	I hope you enjoy reading eBooks.</string>
+	<!-- Dialogs -->
+	<string name="dlg_title_select">Select</string>
+	<string name="dlg_title_warning">Warning</string>
+	<string name="dlg_title_error">Error</string>
+	<string name="dlg_importing">Importing...</string>
+	<string name="dlg_deleting">Deleting...</string>
+	<!-- Buttons -->
+	<string name="btn_yes">Yes</string>
+	<string name="btn_no">No</string>
+	<string name="btn_ok">OK</string>
+	<string name="btn_cancel">Cancel</string>
+	<!-- Messages -->
+	<string name="msg_first_page">This is the first page.</string>
+	<string name="msg_last_page">This is the last page.</string>
+	<string name="msg_no_books">No books.</string>
+	<string name="msg_how_to_import">[Menu-Import] You can import book files from SDCard.</string>
+	<string name="msg_duplicate_file">Book already exist. Keep going other books?</string>
+	<string name="msg_no_file">File not exists!</string>
+	<string name="msg_delete_confirm">Are you sure to delete this item?</string>
+	<string name="msg_import_succeed">Import succeed (%2$d / %2$d)</string>
+	<string name="msg_delete_succeed">Delete succeed</string>
+	<string name="msg_preference_changed">%s is changed.</string>
+	<string name="msg_bookmark_succeed">Page bookmarked successfully.</string>
+	<string name="msg_bookmark_removed">Bookmark was removed.</string>
+	<string name="msg_invalid_book_type">Invalid book type.</string>
+	<string name="msg_invalid_toc">Invalid table of contents.</string>
+	<!-- Epub Pagination End -->
+	<string name="Unable_to_reach_pearl_server">Unable to reach pearl server,please try after some time.If this problem continues please contact your Administrator</string>
+	<string name="network_connection_unreachable">Please check your internet connection</string>
+	<string name="attendance_submitted_successfully">Attendance has been submitted successfully</string>
+	<string name="missed_Morning_attendance">You have missed Morning attendance</string>
+	<string name="refresh_button_to_download_student_list">Please click the refresh button above to downlaod Students List</string>
+	<string name="There_are_no_posts">There are no posts</string>
+	<string name="no_message_posted">Oops.. You didn\'t post a message</string>
+	<string name="no_comment_posted">Oops.. You didn\'t comment the post</string>
+	<string name="Failed_to_download_the_file">Failed to download the file</string>
+	<string name="Please_click_the_refresh_button_above_to_get_Wall">Please click the refresh button above to get Wall</string>
+	<string name="need_to_download_Question_paper">Need to download Question paper</string>
+	<string name="unable_to_fetch_the_details">Unable to fetch the details:</string>
+	<string name="download_Failed_Retry">Download Failed!! Retry</string>
+	<string name="Exam_Started">Exam Started</string>
+	<string name="upload_Answer_Paper">Hurray! Answer paper has been uploaded</string>
+	<string name="see_Results">See Results</string>
+	<string name=" refresh_button_above_to_downlaod_Exam_List">Please click the refresh button above to downlaod Exam List</string>
+	<string name="error_downloading_the_image">Error downloading the image</string>
+	<string name="started_loading">started loading</string>
+	<string name="finished_loading">finished loading</string>
+	<string name="there_are_no_images">There are no images</string>
+	<string name="there_are_no_notes_for_this_Subject">There are no notes for this Subject</string>
+	<string name="click_the_refresh_button_above_to_get_Notices">Please click the refresh button above to get Notices</string>
+	<string name="check_internet_connection">Check your Internet Connectivity</string>
+	<string name="marked_Successfully">Marked Successfully</string>
+	<string name="unmarked_Successfully">Unmarked_Successfully</string>
+	<string name="saved_Successfully">Saved Successfully</string>
+	<string name="save_failed">Save failed</string>
+	<string name="exam_saved_successfully">Exam saved successfully!</string>
+	<string name="failed_to_upload">Failed to uplaod as you are not connected, paper will be uploaded once you are connected back.</string>
+	<string name="exam_Time_Out">Oops!! time up.</string>
+	<string name="exam_submitted_successfully">Exam submitted successfully! You will be notified once the results are released.</string>
+	<string name="please_check_with_the_support_on_the_issues">Oops! Something unexpected happened. Please check with the support on the issues.</string>
+	<string name="You_dont_have_pages_in_this_book">You dont have pages in this book</string>
+	<string name="Additional_Info_has_been_downloaded_Successfully">Additional Info has been downloaded Successfully</string>
+	<string name="Error_retaining_the_exam_details">Error retaining the exam details</string>
+	<string name="Please_click_the_refresh_button_above_to_populate_shelf">Please click the refresh button above to populate shelf</string>
+	<string name="FeedBack_Saved_successfully">Your feedback has been submitted successfully</string>
+	<!-- ERROR CODES FOR PEARL APPLICATION EXCEPTIONS -->
+	<string name="student_or_teacher_logged_in_NoticeBoardActivity">PML 100 - CONTACT ADMINSTRATOR</string>
+	<string name="COLUMN_DOES_NOT_EXIST_NOTICEBOARDACTIVITY">PML 101 - CONTACT ADMINISTRATOR</string>
+	<string name="NOTICEBOARD_REQUEST_CODE_EXCEPTION">PML 102 - CONTACT ADMINISTRATOR</string>
+	<string name="UPDATE_BADGE_COUNT_NOTICEBOARD">PML 103 - CONTACT ADMINISTRATOR</string>
+	<string name="UPDATE_NOTICEBOARD">PML 104 - CONTACT ADINISTRATOR</string>
+	<string name="NETWORK_AVAILABLE_NOTICEBOARD">PML 105 - CONTACT ADMINISTRATOR</string>
+	<string name="NETWORK_UNAVAILABLE_NOTICEBOARD">PML 106 - CONTACT ADMINISTRATOR</string>
+	<string name="DOWNLOAD_EXCEPTION_VEGANOTIFICATION">PML 107 - CONTACT ADMINSTRATOR</string>
+	<string name="DOWNLOADINFO_EXCEPTION_VEGANOTIFICATION">PML 108 - CONTACT ADMINSTRATOR</string>
+	<string name="GET_NOTICEBOARDINFO_VEGANOTIFICATION">PML 109 - CONTACT ADMINSTRATOR</string>
+	<string name="JSON_PARSING_EXCEPTION">PML 110 - CONTACT ADMINSTRATOR</string>
+	<string name="GET_COUNT_INVALID_ATTRIBUTE_EXCEPTION">PML 111 - CONTACT ADMINSTRATOR</string>
+	<string name="INVALID_NOTIFICATIOIN_TYPE_EXCEPTION">PML 112 - CONTACT ADMINSTRATOR</string>
+	<string name="LOGINSCREEN_EXCEPTION">PML 113 - CONTACT ADMINSTRATOR</string>
+	<string name="LOGINSCREEN_PACKAGE_NOT_FOUND_EXCEPTION">PML 114 - CONTACT ADMINSTRATOR</string>
+	<string name="LOGIN_ACTIVITY_EXCEPTION">PML 115 - CONTACT ADMINSTRATOR</string>
+	<string name="ATTENDANCE_FREQUENCY_EXCEPTION">PML 116 - CONTACT ADMINSTRATOR</string>
+	<string name="ATTENDANCE_STATUS_EXCEPTION">PML 117 - CONTACT ADMINSTRATOR</string>
+	<string name="ATTENDANCE_BIND_EVENT_EXCEPTION">PML 118 - CONTACT ADMINSTRATOR</string>
+	<string name="PEARL_CONFIG_VALUES_RETURNS_NULL">PML 119 - CONTACT ADMINSTRATOR</string>
+	<string name="GET_ATTENDANCE_EXCEPTION">PML 120 - CONTACT ADMINSTRATOR</string>
+	<string name="JSON_PROCESSING_EXCEPTION">PML 121 - CONTACT ADMINSTRATOR</string>
+	<string name="IO_EXCEPTION">PML 122 - CONTACT ADMINSTRATOR</string>
+	<string name="MALFORMED_URL_EXCEPTION">PML 123 - CONTACT ADMINSTRATOR</string>
+	<string name="CHAT_DOWNLOAD_FROM_SERVER_EXCEPTION">PML 124 - CONTACT ADMINSTRATOR</string>
+	<string name="CHAT_MESSAGE_LIKE_EXCEPTION">PML 125 - CONTACT ADMINSTRATOR</string>
+	<string name="FILE_SUBMISSION_EXCEPTION">PML 126 - CONTACT ADMINSTRATOR</string>
+	<string name="EXAM_RESPONSE_EXCEPTION">PML 127 - CONTACT ADMINSTRATOR</string>
+	<string name="JSON_GENERATION_EXCEPTION">PML 128 - CONTACT ADMINSTRATOR</string>
+	<string name="JSON_MAPPING_EXCEPTION">PML 129 - CONTACT ADMINSTRATOR</string>
+	<string name="no_new_notifications">No new notifications</string>
+	<string name="no_network_connection">Check your internet connection</string>
+	<!-- Action Bar -->
+	<string name="actionbar_activity_not_found">Failed to open intent...</string>
+	<!-- Feedback -->
+	<string name="FEEDBACK_SUBMISION_FAILURE">Feedback cannot be submitted at this moment, Please try after some time</string>
+	<string name="FEEDBACK_SUBMISION_SUCCESS">Feedback successfully submitted</string>
+	<string name="quizzard">QUIZZARD</string>
+	<string name="Exam_list">EXAMS LIST</string>
+	<string name="subject">Subject</string>
+	<string name="exam">Test</string>
+	<string name="validity">Validity</string>
+	<string name="status">Status</string>
+	<string name="sign">Sign In</string>
+	<string name="password1">Password</string>
+	<string name="username1">Username</string>
+	<string name="enter_password">Enter password</string>
+	<string name="enter_userName">Enter username</string>
+	<!-- Notification -->
+	<string name="logged_out">You are not logged in. Please log in to view the events</string>
+	<!-- CRASH REPORTS -->
+	<string name="crash_dialog_title">Pearl Crashed</string>
+	<string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click \'OK\'.</string>
+	<string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+	<string name="crash_dialog_ok_toast">Thank you !</string>
+	<!-- dashboard -->
+	<string name="dashboard_updates">Check for updates</string>
+	<string name="teacher_my_approval">My Approvals</string>
+	<!-- Pen Settings -->
+	<string name="filling_settings">Filling settings</string>
+	<string name="settingview_close_btn_desc">close</string>
+	<string name="penSettings">Pen Settings</string>
+	<string name="pensettings_preset_empty">No Preset Settings</string>
+	<string name="pen_settings_preset_delete_title">Delete</string>
+	<string name="pen_settings_preset_delete_message">Selected pen preset will be erased permanetly erased</string>
+	<string name="pen_settings_preset_exist">Already exist</string>
+	<string name="pen_settings_maximum_message">Reached Maximum number of slot{12}</string>
+	<string name="penTitle">Pen</string>
+	<string name="eraserTitle">Eraser</string>
+	<string name="undoTitle">Undo</string>
+	<string name="redoTitle">Redo</string>
+	<string name="saveCanvas">Save</string>
+	<string name="loadCanvas">load</string>
+	<string name="clearCanvas">Clear</string>
+	<string name="closeCanvas">Close</string>
+	<string name="fetch_questions">fetch questions</string>
+	<string name="import_questions">Import Questions</string>
+	<string name="click_yes_to_replace_the_existing_question_no_to_add_new_">"Click Yes to replace the existing question,No to add new "</string>
+	<string name="question_bank">Question Bank</string>
+	<!-- HELP -->
+	<string name="attendance_help">Mark present/absent and submit the attendance using the corresponding buttons.</string>
+<!-- faq -->
+<string name="faq">FAQs</string>
+<string name="howTo">How To</string>
+<string name="how_to_view">Q.How to view single and double page layouts?</string>
+<string name="screenLandscape">A.Hold the screen in Landscape to view single page and to view double pages hold the screen in portraite.</string>
+<string name="download_books">Q.How to download books?</string>
+<string name="go_to_library">A.Go to library and click select the book which you want to download from the scroll view and click on the download button.</string>
+<string name="library">Library</string>
+<string name="delete_books">Q.How to delete books?</string>
+<string name="myshelf">A.Go to Myshelf and click on the red Icon.</string>
+<string name="isInternet">Q.Is Internet connection required to download and view the books?</string>
+<string name="requiredInternet">Internet connection is required to download the books once the books are downloaded no need of Internet connection to view the book.</string>
+<string name="my_Account">My Account</string>
+<string name="aboutPressmart">About Pressmart</string>
+<string name="pressmart_gives">Pressmart gives you powerful digital publishing capabilities with an on-demand platform, advanced content management tools and an industry-grade cloud hosting infrastructure.</string>
+<string name="contact">contact</string>
+<string name="banjaraHills">MJR Arcade, Plot # 1000, 3rd Floor, Gurukul Society, Khanamet, Madhapur, Hyderabad- 81, Telangana, India.</string>
+<string name="pressmart">Pressmart</string>
+<string name="signOut">Q.How to signOut?</string>
+<string name="theMenu">A.Click on the menu icon and select the Lougout item.</string>
+
+<!-- create_test_step_2 -->
+<string name="addQuestions">Add Questions</string>
+<string name="questionType">QuestionType</string>
+<string name="ffq">Fetch From Question Bank</string>
+<string name="book">Book</string>
+<string name="create_Chapter">Chapter</string>
+<string name="create_mark">Marks Allotted</string>
+<string name="create_question">Question </string>
+<string name="create_Note">*Note:-  @@Galileo@@is the inventor of telescope.  (Text between @@ would be treated as the right answer.)</string>
+<string name="create_answer">Answer</string>
+<string name="create_ptp">Preview Test</string>
+<string name="create_add">Add</string>
+<string name="create_done_with_adding">Done with Adding Questions</string>
+<string name="star">*</string>
+
+<!-- create_test_step_three -->
+<string name="assign_Stu">Assign Students</string>
+<string name="sections1">Sections</string>
+<string name="subjects1">Subjects</string>
+<string name="grades1">Grades</string>
+<string name="unCheck_All1">UnCheck All</string>
+<string name="checkAll1">Check All</string>
+<string name="selectStudents1">Students</string>
+<string name="submit1">Submit</string>
+
+<!-- activity_create_test_step1 -->
+<string name="scheduleTest">Schedule Test</string>
+
+<!-- teacher_exams_activities -->
+<string name="te_rejectedTests">Rejected Tests</string>
+<string name="te_resultsPublishedTests">Results Published Tests</string>
+<string name="te_awaitingResultsPublish">Awaiting Results Publish</string>
+<string name="te_testsPublish">Tests Publish</string>
+<string name="te_createTest">Create Test</string>
+<string name="te_awaitingEvaluation">Awaiting Evaluation</string>
+<string name="te_awaitingApprovals">Awaiting Approvals</string>
+<string name="te_creattion_home">Test Creation Home Page</string>
+<string name="te_no_tests">No tests</string>
+
+
+
+<!-- Analytics -->
+	<string name="analytics_help">Please select the fields provided and click on \'Get Chart\' to downlaod the analytics</string>
+	<string name="no_data">No Data Available</string>
+	<string name="no_exams_for_grade">No exams for this grade.Please select other grade</string>
+	<string name="no_subjects_for_exam">No subjects for this selection.Please change your selection and try again</string>
+	<string name="no_sections">No sections for this selection. Please change your selection and try again</string>
+	<string name="no_students">No students for this selection. Please change your selection and try again</string>
+	<string name="no_range">No range for this selection. Please change your selection and try again</string>
+	<string name="no_years">No years for this selection. Please change your selection and try again</string>
+	<string name="title_max_150_characters">Title max 150 characters</string>
+	<string name="message_max_1000_characters">Message max 1000 characters</string>
+	<string name="due_date">Due Date</string>
+	<string name="create_notice">Create Notice</string>
+	<string name="uncheck_all">Uncheck All</string>
+	<string name="check_all">Check All</string>
+	<string name="submit_notice">Submit</string>
+	<string name="parents">Parents</string>
+	<string name="Grade_Sections">Grade_Sections</string>
+	<string name="Faculty">Teachers</string>
+	<string name="refresh_button_above_to_downlaod_Exam_List_ALL">All</string>
+	<string name="feedback_hint">Type in your feedback</string>
+		
+	<!-- Dashboard Names -->
+	<string name="feedback_name">FEEDBACK</string>
+	<string name="nticeboard_name">NOTICE BOARD</string>
+	<string name="Attendance_name">ATTENDANCE</string>
+	<string name="Chat_name">CHAT</string>
+	<string name="eReader_name">E-READER</string>
+	<string name="Analytics_name">ANALYTICS</string>
+	<string name="Analytics_list">Analytics</string>
+	<string name="Faq_name">FAQS</string>
+	<string name="NoteBook_name">NOTEBOOK</string>
+	<string name="notes_title">Notes</string>
+	
+	<string name="eReader_Shelf_name">Library</string>
+	<string name="eReader_Store_name">Store</string>
+	<string name="notice_recipients">Click here to see recipients</string>
+	<string name="notice_faculty">Faculty</string>
+	<string name="sync_text">Please click the button below to sync your files</string>
+	
+	
+	</resources>

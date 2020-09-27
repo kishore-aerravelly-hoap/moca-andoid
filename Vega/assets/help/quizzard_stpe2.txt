@@ -1,0 +1,4 @@
+Click on the 'Preview Test Paper' button to view added questions.
+Click on 'Add' button to add questions.
+Click on 'Done with Adding Questions' button to proceed to next step.
+Refer to the note while creating Fill in the blank questions.

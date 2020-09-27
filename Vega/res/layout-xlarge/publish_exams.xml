@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tc_mainbg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="650dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/no_test_to_publish"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@android:id/list"
+        android:layout_marginRight="199dp"
+        android:layout_toLeftOf="@+id/publish"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#defafc" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="119dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="28dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Publish Exams"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:typeface="sans" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frameLayout1"
+        android:background="@drawable/publish_button"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

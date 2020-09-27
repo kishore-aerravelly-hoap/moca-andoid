@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout1" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@drawable/tc_mainbg"
+	android:gravity="fill">
+
+	<FrameLayout android:id="@+id/step_three_frame"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+		<RelativeLayout android:id="@+id/step_three_frame_RelativeLayout"
+			android:layout_width="match_parent" android:layout_height="650dp"
+			android:gravity="fill">
+
+			<GridView android:id="@+id/stepthree_student_list"
+				android:layout_width="770dp" android:layout_height="600dp"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true" android:layout_marginRight="39dp"
+				android:layout_marginTop="200sp" android:background="@drawable/step_three"
+				android:focusableInTouchMode="false" android:numColumns="3"
+				android:paddingTop="25dp" android:visibility="invisible" />
+
+
+			<RelativeLayout android:id="@+id/spinners_layout"
+				android:layout_width="370dp" android:layout_height="600dp"
+				android:layout_alignTop="@+id/stepthree_student_list"
+				android:layout_marginLeft="39dp" android:background="@drawable/step_three">
+
+				<com.pearl.ui.helpers.examination.MultiSelectSpinner
+					android:id="@+id/section_list" android:layout_width="170sp"
+					android:layout_height="50sp" android:layout_alignParentBottom="true"
+					android:layout_centerHorizontal="true" android:layout_marginBottom="67dp"
+					android:contentDescription="@string/sections1" android:spinnerMode="dropdown" />
+
+				<Spinner android:id="@+id/subject_list"
+				 android:layout_width="170sp"
+					android:layout_height="50sp"
+					android:layout_alignLeft="@+id/section_list"
+					android:layout_centerVertical="true" android:contentDescription="Subjects" />
+
+				<Spinner android:id="@+id/grade_list" android:layout_width="170sp"
+					android:layout_height="50sp" android:layout_alignParentTop="true"
+					android:layout_centerHorizontal="true" android:layout_marginTop="62dp"
+					android:contentDescription="@string/grades1" />
+			</RelativeLayout>
+
+			<CheckBox
+			    android:id="@+id/stepthree_uncheck_all"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@+id/stepthree_check_all"
+			    android:layout_alignBottom="@+id/stepthree_check_all"
+			    android:layout_marginLeft="33dp"
+			    android:layout_toRightOf="@+id/stepthree_check_all"
+			    android:text="@string/unCheck_All1"
+			    android:textColor="#000000"
+			    android:visibility="gone" />
+
+			<CheckBox
+			    android:id="@+id/stepthree_check_all"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_above="@+id/spinners_layout"
+			    android:layout_alignLeft="@+id/stepthree_student_list"
+			    android:layout_marginBottom="21dp"
+			    android:text="@string/checkAll1"
+			    android:textColor="#000000"
+			    android:visibility="gone" />
+
+		</RelativeLayout>
+	</FrameLayout>
+
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="95dp" android:background="@drawable/tc_topbar">
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:text="@string/assign_Stu"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="#FFFFFF"
+		    android:textSize="25sp"
+		    android:typeface="sans" />
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="119dp"
+		    android:layout_height="85dp"
+		    android:layout_marginLeft="28dp"
+		    android:layout_marginTop="10dp"
+		    android:src="@drawable/la_salle_logo" />
+
+		<Button android:id="@+id/examMenu" android:layout_width="35dp"
+			android:layout_height="40dp" android:layout_marginLeft="1200dp"
+			android:background="@drawable/menu_btn" />
+		 <ImageView
+            android:id="@+id/create_test_step3_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/help" />
+	</FrameLayout>
+
+	<Button android:id="@+id/stepthree_filter_student_list"
+		android:layout_width="170sp" android:layout_height="55sp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_marginBottom="23dp"
+		android:layout_marginLeft="42dp" android:background="@drawable/tc_button_background"
+		android:text="@string/selectStudents1" />
+
+	<Button android:id="@+id/submitStepThree" android:layout_width="170sp"
+		android:layout_height="55sp" android:layout_alignBaseline="@+id/stepthree_filter_student_list"
+		android:layout_alignBottom="@+id/stepthree_filter_student_list"
+		android:layout_marginLeft="24dp" android:layout_toRightOf="@+id/stepthree_filter_student_list"
+		android:background="@drawable/tc_button_background" android:text="@string/submit1"
+		android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+You can view sent/received comments from the right panel.

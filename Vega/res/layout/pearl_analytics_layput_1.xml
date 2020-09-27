@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#262626" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Pearl Analytics"
+            android:layout_marginLeft="450dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/analytics_across_tests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/analytics_button_shape"
+            android:text="Performance Analysis Of Students In a Section"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/analytics_across_subjects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="90dp"
+            android:layout_toRightOf="@+id/analytics_across_tests"
+            android:background="@drawable/analytics_button_shape"
+            android:text="Performance Analysis Of Students Across Sections"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="1200dp"
+        android:layout_height="560dp"
+        android:layout_alignParentBottom="true"
+        
+        android:layout_toRightOf="@+id/relativeLayout3"
+       
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/analytics"
+            android:layout_width="1200dp"
+            android:layout_height="560dp"
+            android:padding="20dp" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/empty_analytics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="406dp"
+            android:layout_marginTop="250dp"
+            android:text="No Data Available"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout2" >
+
+        <ImageView
+            android:id="@+id/across_section_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="300dp"
+            android:src="@drawable/analytics_pointer"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/across_test_highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="420dp"
+            android:src="@drawable/analytics_pointer"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/FrameLayout1"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_back"
+        android:orientation="vertical"
+        android:visibility="visible" >
+	     <LinearLayout
+	        android:id="@+id/relativeLayout3"
+	        android:layout_width="200dp"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+	        
+	     <Spinner
+            android:id="@+id/analytics_grade_spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp" />
+
+        <Spinner
+            android:id="@+id/analytics_section1_spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp" />
+
+        <Spinner
+            android:id="@+id/analytics_section2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:popupBackground="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+	    <Spinner
+            android:id="@+id/analytics_subject_spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp" />
+
+        <Spinner
+            android:id="@+id/analytics_test_spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp" />
+        
+	     </LinearLayout>
+        <Button
+            android:id="@+id/get_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/analytics_button_shape"
+            android:layout_marginBottom="20dp"
+            android:text="Get Chart"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

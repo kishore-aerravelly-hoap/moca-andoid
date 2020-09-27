@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shelf_grid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/book_shelf"
+    android:columnWidth="240dp"
+    android:gravity="left"
+    android:horizontalSpacing="10dp"
+    android:numColumns="8"
+    android:padding="10dp"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="10dp" >
+
+    <!-- Preview: listitem=@layout/shelfgrid_item -->
+
+</GridView>

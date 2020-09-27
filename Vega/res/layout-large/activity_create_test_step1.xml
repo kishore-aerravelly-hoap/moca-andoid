@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tc_mainbg"
+    android:orientation="vertical"
+    tools:context=".activities.AttendanceActivity" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/tc_topbar" >
+
+        <TextView
+            android:id="@+id/exam_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:text="@string/scheduleTest"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/create_test_step1_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="37dp"
+            android:layout_toLeftOf="@+id/examMenu"
+            android:src="@drawable/help" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/header_layout"
+        android:background="@drawable/tc_contentholder_bg"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/test_name_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/testNametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_test_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/testName_step1"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="50dp"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="35"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/exam_category_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/exam_category"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/exam_category"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="6dp" >
+
+            <TextView
+                android:id="@+id/from_date_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_from_date_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" 
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/fromDate"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="65dp"
+                android:editable="false"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:inputType="datetime"
+                android:textSize="15dp"
+                android:textColor="#000000" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/to_date_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView2b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_to_date_label"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/toDate"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="70dp"
+                android:editable="false"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:inputType="date"
+                android:textSize="15dp"
+                android:textColor="#000000" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/duration_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/star"
+                android:textColor="#FF3300"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_duration"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/duration"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="22dp"
+                android:ems="10"
+                android:inputType="number|textNoSuggestions"
+                android:maxLength="4"
+                android:textSize="15dp"
+                android:textColor="#000000" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp" >
+
+            <CheckBox
+                android:id="@+id/repeattest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_repeat_test"
+                android:textColor="#000000" 
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/openbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/step1_open_book"
+                android:textColor="#000000" 
+                android:textSize="15sp"/>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/listofbooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:text="@string/step1_open_book_list"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/chkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="155dp"
+                android:text="@string/step1_check_all"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <GridView
+                android:id="@+id/listview"
+                android:layout_width="500dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginRight="140dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/open_books_list_grid"
+                android:choiceMode="multipleChoice"
+                android:numColumns="2"
+                android:padding="20dp"
+                android:textColor="#000000"
+                android:visibility="gone" >
+            </GridView>
+
+            <LinearLayout
+                android:id="@+id/next_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/mandatory_message"
+                    android:textColor="#FF3300" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginRight="10dp"
+                    
+                    android:background="@drawable/tc_button_background"
+                    android:src="@drawable/students_submitbutton"
+                    android:text="@string/next"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

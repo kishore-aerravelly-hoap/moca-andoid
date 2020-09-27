@@ -1,0 +1,22 @@
+{"calEventsList":
+	[{"eventName":"Moms's B'day",
+	  "fromDate":1328611860000,
+	  "toDate":1328613900000,
+	  "repeat":"One-time event",
+	  "calendar":"My calendar",
+	  "location":"Sydney",
+	  "description":null,
+	  "reminders":
+		      ["reminderBefore":2, "reminderBefore":4]
+	  },
+	  {"eventName":"Prepare for Xam",
+	   "fromDate":1328617800000,
+	   "toDate":1328620200000,
+	   "repeat":"Daily",
+	   "calendar":"My calendar",
+	   "location":"Hyderabad",
+	   "description":null,
+	   "reminders":[]
+	  }
+	 ]
+}

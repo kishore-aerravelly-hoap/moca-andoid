@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/results_publish_Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/publish_approvalexpired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/results_publish_section"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="E"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:textColor="#FF0000"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/results_publish_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results_publish_Grade"
+        android:layout_alignBottom="@+id/results_publish_Grade"
+        android:layout_toRightOf="@+id/results_publish_Grade"
+        android:text="section"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/results_publish_examName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results_publish_section"
+        android:layout_alignBottom="@+id/results_publish_section"
+        android:layout_toRightOf="@+id/results_publish_section"
+        android:maxLines="2"
+        android:text="examName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+</RelativeLayout>

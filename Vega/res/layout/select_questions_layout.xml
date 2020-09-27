@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tc_mainbg" >
+
+    <FrameLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/tc_topbar" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <Button
+            android:id="@+id/question_bank_menu"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1200dp"
+            android:background="@drawable/menu_btn" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/question_bank"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+        
+        <ImageView
+            android:id="@+id/edit_question_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1200dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/help" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/header_layout" >
+
+        <Spinner
+            android:id="@+id/select_questions_grade"
+            android:layout_width="220dp"
+             android:layout_height="50dp"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="50dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+             />
+
+        <Spinner
+            android:id="@+id/select_questions_subject"
+            android:layout_width="180dp"
+             android:layout_height="50dp"
+               android:spinnerMode="dropdown"
+            android:layout_marginLeft="200dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000" />
+
+        <Spinner
+            android:id="@+id/select_questions_type"
+            android:layout_width="436dp"
+              android:spinnerMode="dropdown"
+             android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/fetch_questions"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/fetch_questions"
+            android:onClick="fetchOnClick"
+            android:src="@drawable/ic_download" />
+        
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/select_questions_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/import_questions"
+        android:layout_alignParentLeft="true"
+        android:dividerHeight="2px"
+	    android:divider="#D85648"       
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="54dp"
+        android:cacheColorHint="#FFFECA"
+        android:padding="10dp"
+         >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/import_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="158dp"
+        android:drawableRight="@drawable/notebook_add"
+        android:text="@string/import_questions" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="270dp"
+    android:layout_gravity="center" >
+
+    <EditText
+        android:id="@+id/writeComment"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:gravity="top"
+        android:hint="@string/chat_comment"
+        android:inputType="textAutoCorrect|textCapSentences" />
+
+    <Button
+        android:id="@+id/commentButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/writeComment"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Comment"
+        android:textColor="#0000cd"
+        android:textSize="18sp" >
+    </Button>
+
+</RelativeLayout>

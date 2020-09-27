@@ -1,0 +1,4 @@
+Select a subject from the list of subjects from the top of the screen to start creating notes.
+Click on 'Add'/'Delete' button to add/delete notes.
+Click on the list of notes on the left to open the notes.
+Search allows you to search text with in the notes created.

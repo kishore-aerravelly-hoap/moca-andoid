@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ereader_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/canvas_container_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <Button
+                android:id="@+id/readbook_menu_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/menu_btn" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                android:text="@string/eReader_name"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/la_salle_logo" 
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bookContent_new"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/buttonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:id="@+id/markControls"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ereader_bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/undoBtn_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/undo" 
+                        tools:ignore="ContentDescription">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/redoBtn_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/redo" 
+                        tools:ignore="ContentDescription">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/read_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/read"
+                        tools:ignore="ContentDescription" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/eraseBtn_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/erase" 
+                        tools:ignore="ContentDescription">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/settingBtn_pen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/pen" 
+                        tools:ignore="ContentDescription">
+                    </ImageView>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/view_images"
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_toLeftOf="@+id/searchButton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gallery_icon"
+                    android:visibility="gone" 
+                    tools:ignore="ContentDescription">
+                </ImageButton>
+
+                <ImageView
+                    android:id="@+id/downloadimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/backToShelf"
+                    android:src="@drawable/download_image"
+                    android:visibility="gone" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/backToShelf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/toc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/backtoshelf" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/font"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backToShelf"
+                    android:onClick="onPopFontSelection"
+                    android:src="@drawable/font" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/backToShelf"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/font"
+                    android:onClick="onPopThemeSelection"
+                    android:src="@drawable/theme" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/brightness"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/backToShelf"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/theme"
+                    android:src="@drawable/brightness" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="OnPopaddnoteimage"
+                    android:src="@drawable/ereader_addbook_img" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/pen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_marginRight="11dp"
+                    android:layout_toLeftOf="@+id/imageView5"
+                    android:src="@drawable/book_draw"
+                    android:visibility="gone" 
+                    tools:ignore="ContentDescription">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_marginLeft="19dp"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:onClick="OnPopUpBookMarkImageClicked"
+                    android:src="@drawable/ereader_bookmark_img" 
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/backToExam_book"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/font"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/brightness"
+                    android:src="@drawable/backtoexams"
+                    android:visibility="gone" 
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/pen_imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/gotoPage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/brightness"
+                    android:onClick="onPenFunctionality"
+                    android:src="@drawable/pen" 
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/load_saved_canvas_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:layout_alignTop="@+id/pen_imageView"
+                    android:layout_toRightOf="@+id/pen_imageView"
+                    android:onClick="loadCanvasImage"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/book_album" 
+                    tools:ignore="ContentDescription"/>
+
+                <EditText
+                    android:id="@+id/gotoPage"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:background="@drawable/search_border"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint="Goto"
+                    android:inputType="number"
+                    android:longClickable="false"
+                    android:maxLength="4"
+                    android:textColor="#000000" 
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/toc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/gotoPage"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/gotoPage"
+                    android:src="@drawable/toc" 
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/searchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/brightness"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/toc"
+                    android:src="@drawable/search" 
+                    tools:ignore="ContentDescription"/>
+
+                <ImageView
+                    android:id="@+id/read_book_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/toc"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/searchButton"
+                    android:src="@drawable/help" 
+                    tools:ignore="ContentDescription"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bookRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/buttonsLayout" >
+
+                <ImageView
+                    android:id="@+id/bookmark_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="715dp"
+                    android:src="@drawable/ereader_bookmark_ribbon"
+                    android:visibility="gone" 
+                    tools:ignore="ContentDescription"/>
+
+                <FrameLayout
+                    android:id="@+id/bookLayout_new"
+                    android:layout_width="590dp"
+                    android:layout_height="880dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/canvas_viewfor_pen_function"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ScrollView
+                            android:id="@+id/web_view_scroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <WebView
+                                android:id="@+id/leftPageContent_new"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </ScrollView>
+
+                        <com.samsung.spensdk.SCanvasView
+                            android:id="@+id/canvasViewforereader"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hide_bookmark"
+                android:layout_width="300dp"
+                android:layout_height="600dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/ereader_bookmark_menubg"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/list_bookmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="85dp" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/notesEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="85dp"
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:visibility="invisible" />
+
+                <ListView
+                    android:id="@+id/list_notebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="85dp" >
+                </ListView>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/tocList"
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_alignRight="@+id/searchBlock"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="88dp"
+                android:background="#c6e2f5"
+                android:padding="20dp"
+                android:visibility="gone" >
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/searchBlock"
+                android:layout_width="280dp"
+                android:layout_height="360dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="85dp"
+                android:background="#c6e2f5"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <SearchView
+                    android:id="@+id/pageSearch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/search_border"
+                    android:gravity="top"
+                    android:iconifiedByDefault="false" >
+                </SearchView>
+
+                <ListView
+                    android:id="@+id/pageSearchResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="240dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/search_results_border"
+                    android:clickable="true"
+                    android:footerDividersEnabled="false"
+                    android:textFilterEnabled="true" >
+                </ListView>
+
+                <LinearLayout
+                    android:id="@+id/searchOptions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#FFFFFF"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/googleSearchButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/google" 
+                        tools:ignore="ContentDescription"/>
+
+                    <ImageView
+                        android:id="@+id/dictionaryButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/dictonary" 
+                        tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b0b0b0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#b0b0b0" >
+
+        <ImageView
+            android:id="@+id/chatRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/refresh" />
+
+        <TextView
+            android:id="@+id/newChatMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="You have new stories"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/postChatImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="42dp"
+            android:layout_toLeftOf="@+id/chatRefresh"
+            android:src="@drawable/post_chat" >
+        </ImageView>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#b0b0b0" />
+
+</LinearLayout>

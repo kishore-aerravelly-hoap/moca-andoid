@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.pearl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/shelves_frame_layout" >
+
+        <com.pearl.shelves.view.ShelvesView
+            android:id="@+id/grid_shelves"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="160px"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            app:shelfBackground="@drawable/shelf_panel" />
+
+        <ListView
+            android:id="@+id/shelf_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:divider="#d3a341"
+            android:listSelector="#d3a341"
+            android:padding="40dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/noResults"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="550dp"
+            android:paddingTop="150dp"
+            android:text="No Results Found"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/shelfSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="500dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shelf_search"
+                android:hint="Search"
+                android:maxLength="25"
+                android:paddingBottom="10dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@null" >
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shelves_frame_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shelf_header" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/la_salle_logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="La Salle eReader"
+            android:textColor="@android:color/white"
+            android:textSize="30dip"
+            android:textStyle="normal" >
+        </TextView>
+
+        <Button
+            android:id="@+id/shelf_menu_button"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/menu_btn"
+            android:visibility="visible" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/vega_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:src="@drawable/store"
+            android:visibility="visible" >
+        </ImageView>
+
+        <!--
+			<ImageView android:id="@+id/shelf_delete"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/shelfRefresh"
+			android:layout_marginRight="29dp"
+			android:layout_toLeftOf="@+id/shelfRefresh"
+			android:src="@drawable/shelf_book_delete" android:visibility="gone"/>
+        -->
+
+        <ImageView
+            android:id="@+id/backToExamFromShelf"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="71dp"
+            android:layout_toRightOf="@+id/vega_store"
+            android:src="@drawable/backtoexams"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/shelfRefreshProgress"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/shelfRefresh"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/shelfRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Chat_title"
+            android:layout_marginRight="53dp"
+            android:layout_toLeftOf="@+id/shelf_menu_button"
+            android:src="@drawable/refresh"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/selected_list_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/shelfRefresh"
+            android:layout_marginRight="109dp"
+            android:layout_toLeftOf="@+id/shelfRefresh"
+            android:visibility="invisible"
+            android:src="@drawable/selected_shelf_list_view" />
+
+        <ImageView
+            android:id="@+id/shelf_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_display"
+            android:layout_marginRight="43dp"
+            android:layout_toLeftOf="@+id/shelfRefresh"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/help" />
+
+        <ImageView
+            android:id="@+id/unselected_list_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/selected_list_display"
+            android:layout_alignTop="@+id/selected_list_display"
+            android:src="@drawable/shelf_list_unselected"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/unselected_grid_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selected_list_display"
+            android:layout_toLeftOf="@+id/selected_list_display"
+            android:src="@drawable/shelf_grid_unselected"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/selected_grid_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/selected_list_display"
+            android:layout_toLeftOf="@+id/selected_list_display"
+            android:src="@drawable/shelf_grid_selected" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

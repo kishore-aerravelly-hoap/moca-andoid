@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/approval_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp" >
+
+        <fragment
+            android:id="@+id/teacher_publish_examList_frag"
+            android:name="com.pearl.fragment.ExamsPublishStudentListFragment"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            class="com.pearl.fragment.ExamsPublishStudentListFragment" />
+
+        <fragment
+            android:id="@+id/teacher_exam_publish_frag"
+            android:name="com.pearl.fragment.TeacherPublishExamListFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/teacher_publish_examList_frag"
+            class="com.pearl.fragment.TeacherPublishExamListFragment" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/approval_frame"
+        android:background="#defafc" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="My Approvals"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:typeface="sans" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#defafc" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Tests Publish "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/publish_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1150dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/help" />
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1200dp"
+            android:background="@drawable/menu_btn" />
+        
+    </FrameLayout>
+    
+    
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/la_salle_logo" />
+
+</RelativeLayout>

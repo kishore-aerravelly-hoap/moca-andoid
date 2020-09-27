@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/publish_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp" >
+
+        <fragment
+            android:id="@+id/awaiting_results_publish_exam_list_fragment_id"
+            android:name="com.pearl.fragment.AwaitingResultsPublishFragment"
+            android:layout_width="160dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+
+        <fragment
+            android:id="@+id/awaiting_results_publish_students_list_fragment_id"
+            android:name="com.pearl.fragment.AwaitingResultsPublishStudentsList"
+            android:layout_width="160dp"
+            android:layout_height="159dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <fragment
+            android:id="@+id/awaiting_results_publish_answersheet"
+            android:name="com.pearl.fragment.AwaitngResultsPublishAnswerSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/awaiting_results_publish_students_list_fragment_id"
+            android:layout_toRightOf="@+id/awaiting_results_publish_exam_list_fragment_id" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#defafc" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Awaiting Results Publish"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:typeface="sans" />
+        
+        
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1200dp"
+            android:background="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/teacher_approval_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1100dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/help" />
+        
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/la_salle_logo" />
+
+</RelativeLayout>

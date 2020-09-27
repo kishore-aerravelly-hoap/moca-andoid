@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dash_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/la_salle_logo" />
+   
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="500dp"
+        android:layout_height="55dp"
+        android:gravity="center_vertical|" >
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/dasshboard_updates_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/dashboard_updates"
+        android:layout_alignTop="@+id/dashboard_updates"
+        android:layout_marginRight="86dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/dashboard_updates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/logout_dash"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/refreshicon"
+        android:text="@string/dashboard_updates" />
+
+    <ImageView
+        android:id="@+id/logout_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logout_dashboard" />
+
+    
+
+    <TextView
+        android:id="@+id/logged_student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_alignParentRight="true"
+        android:paddingRight="74dp"
+        android:text="John"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/No_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logged_student_name"
+        android:layout_toRightOf="@+id/imageView1"
+        android:src="@drawable/wifi_dashboard"
+        android:visibility="visible" />
+    
+    <GridView 
+        android:id="@+id/dashboard_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:layout_below="@+id/logged_student_name"
+        android:gravity="center|center_horizontal"
+        android:columnWidth="150dp"
+        android:padding="10dp">
+        
+    </GridView>    
+    
+    
+</RelativeLayout>

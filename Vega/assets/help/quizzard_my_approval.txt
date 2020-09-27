@@ -1,0 +1,2 @@
+Select a test from the left panel and click on the 'Approve'/'Reject' button to do corresponding action.
+Tests appended with 'E' are expired, these can not be Approved/Rejected.

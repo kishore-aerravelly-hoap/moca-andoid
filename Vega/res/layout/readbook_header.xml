@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e5cf"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/backToShelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="34dp"
+            android:src="@drawable/backtoshelf" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Vega"
+            android:textColor="#545130"
+            android:textSize="21sp"
+            android:typeface="serif" >
+        </TextView>
+
+        <ZoomControls
+            android:id="@+id/textZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+        </ZoomControls>
+
+        <ImageButton
+            android:id="@+id/nextPageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textZoomControls"
+            android:src="@drawable/button_next_icon" >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/gotoPage"
+            android:text="Goto Page : "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/gotoPage"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/nextPageButton"
+            android:inputType="number"
+            android:textColor="#000000" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/prevPageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView1"
+            android:src="@drawable/button_previous_icon" >
+        </ImageButton>
+    </RelativeLayout>
+
+</LinearLayout>

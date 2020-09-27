@@ -1,0 +1,1 @@
+Select a test from the left panel and click on the 'Publish' button to publish the test

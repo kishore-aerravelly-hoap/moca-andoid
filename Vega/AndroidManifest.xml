@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.pearl" android:versionCode="2"
+	android:versionName="1.0.1" android:installLocation="internalOnly" xmlns:tools="http://schemas.android.com/tools">
+	<uses-sdk android:minSdkVersion="11" android:maxSdkVersion="21" tools:ignore="UsesMinSdkAttributes"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<application android:icon="@drawable/pearl_icon" android:name=".application.ApplicationData" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:allowClearUserData="false" android:hardwareAccelerated="false" android:largeHeap="true" android:vmSafeMode="true" android:allowBackup="false">
+
+		<receiver android:name="com.pearl.widget.VegaWidgetProvider" android:icon="@drawable/icon" android:label="Pearl Widget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info" />
+		</receiver>
+		<receiver android:name="com.pearl.services.UploadAnswerSheetAlarm" />
+
+		<activity android:name=".activities.LoginActivity" android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar" android:screenOrientation="sensorLandscape" android:hardwareAccelerated="true" android:clearTaskOnLaunch="false" android:finishOnTaskLaunch="false">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<provider android:name="com.pearl.database.handlers.ConfigHandler" android:authorities="com.pearl.contentProvider" />
+		<provider android:name="com.pearl.database.handlers.NoteBookHandler" android:authorities="com.pearl.contentProvider.notebook" />
+
+		<activity android:name=".activities.OnlineActivity" android:icon="@drawable/titlegradiant" android:label="" android:screenOrientation="sensorLandscape" />
+
+
+		<activity android:name=".activities.ReadbookActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="sensorPortrait" android:hardwareAccelerated="true" android:multiprocess="true" />
+		<activity android:name=".activities.EpubReaderActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="sensorPortrait" android:hardwareAccelerated="true" android:multiprocess="true" />
+
+
+		<activity android:name=".activities.ImageGalleryActivity" android:icon="@drawable/titlegradiant" android:label="" android:theme="@android:style/Theme.Dialog" />
+
+		<activity android:name=".activities.QuizzardActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="sensorLandscape" />
+
+
+		<activity android:name=".activities.AnouncementActivity" android:label="New Anouncement" android:screenOrientation="sensorLandscape" android:icon="@drawable/titlegradiant" android:theme="@android:style/Theme.Dialog" />
+
+		<activity android:name=".activities.ExamResultsActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="sensorLandscape" />
+
+
+		<activity android:name=".activities.NotesActivity" android:label="" android:icon="@drawable/titlegradiant" android:theme="@android:style/Theme.Dialog" />
+
+		<activity android:name=".activities.BookmarksActivity" android:label="" android:icon="@drawable/titlegradiant" android:theme="@android:style/Theme.Dialog" />
+
+		<activity android:name=".activities.DictionaryDialogActivity" android:label="Dictionary Lookup" android:icon="@drawable/titlegradiant" android:theme="@android:style/Theme.Dialog" />
+
+		<activity android:name="com.pearl.activities.LocalFileSyncActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="sensorLandscape" />
+
+		<activity android:name=".activities.FeedbackActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+
+		<activity android:name=".activities.FAQActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+
+		<activity android:name=".activities.NoteBookActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+
+		<activity android:name=".activities.ExamListActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+
+		<activity android:name=".activities.ExamDetailsActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+		
+		<activity android:name=".activities.CreateTestStep2Activity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:hardwareAccelerated="true" android:windowSoftInputMode="adjustPan"/>
+
+		<activity android:name=".activities.QuestionsActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" android:finishOnTaskLaunch="true" android:alwaysRetainTaskState="true" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+
+		<activity android:name=".activities.SubjectsListActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+
+		<activity android:name=".activities.VegaConfigurationActivity" android:label="" android:theme="@android:style/Theme.Dialog" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+
+		<activity android:name=".activities.QuestionsListActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:alwaysRetainTaskState="true" />
+
+		<activity android:name=".activities.AttendanceActivity" android:label="" android:icon="@drawable/titlegradiant" android:screenOrientation="landscape" />
+
+		<activity android:name=".activities.TempOptionsActivity" android:label="" android:screenOrientation="landscape" android:icon="@drawable/titlegradiant" android:theme="@android:style/Theme.Dialog" />
+
+		<activity android:name=".activities.CalendarEventActivity" android:label="" android:screenOrientation="landscape" android:icon="@drawable/titlegradiant" />
+
+		<service android:name=".services.NotficationService" android:enabled="true" />
+		<activity android:name=".activities.ActionBar" android:theme="@android:style/Theme.Translucent" />
+		<activity android:name=".activities.DashboardActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:screenOrientation="sensorLandscape"  android:hardwareAccelerated="true" android:clearTaskOnLaunch="false"/>
+		<receiver android:name=".widget.VegaWidgetProvider" />
+		<activity android:name=".activities.ChatActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:screenOrientation="landscape" />
+		<activity android:theme="@android:style/Theme.Translucent" android:screenOrientation="portrait" android:name=".activities.actionbar_readbook" />
+		<activity android:name=".activities.ShelfActivity" android:stateNotNeeded="true" android:screenOrientation="sensorLandscape" android:finishOnTaskLaunch="true" android:finishOnCloseSystemDialogs="true"></activity>
+		<activity android:name=".activities.TeacherPublishList" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.TeacherExamsActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.MyAwaitingApprovalActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.MyApprovalFragmemtActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.ResultsPublishFragmentActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.RejectedTestsFragmentActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.CreateExamStepThree" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activities.CreateTestStep1Activity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activities.PreviewAddedQuestionsActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activities.UnderConstructionTestsActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.CreateTestStep4" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activities.AwaitingEvaluationListActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.ExamEvaluationFragmentActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activities.NoticeBoardActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.TeacherNoticeBoardFragmentActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.TeacherAwaitingResultsFragmentActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.TeacherPublishFragmentActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.TeahcerExamMultiScheduleActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.TeacherNoticeCreate" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PearlAnalyticsActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.SelectQuestionsActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+		<activity android:name=".activities.PearlAnalyticsList" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PassFailPercentageAcrossSectionsChart" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PassFailPercentageAcrossSectionsForASubjectActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PassFailPercentageAcrossGradesChartActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PerformanceOfStudentsInAllSubjectsActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.StudentCountForARangeInAGradeActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PassFailPercentageForaSectionActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PerformanceOfStudentInAllExamTypesActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.PerformanceComparisionOfSectionsChartActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.ComparativeStudyAcrossSectionsChartActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.ComaprativeStudyForaTestActivity" android:screenOrientation="sensorLandscape"></activity>
+		<activity android:name=".activities.YearWiseComparisionActivity" android:screenOrientation="sensorLandscape"></activity>
+	</application>
+</manifest>

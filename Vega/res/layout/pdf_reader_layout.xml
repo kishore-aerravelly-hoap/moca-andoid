@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rootlinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="70dp" >
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/bookmarkImage1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:src="@drawable/bookmark" />
+
+                    <ImageView
+                        android:id="@+id/createNotesIcon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/readbook_notes" />
+
+                    <ImageView
+                        android:id="@+id/bookmarksNotesList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/bookmark_notes_list" />
+
+                    <TextView
+                        android:id="@+id/leftBookmarkTitle"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#94734f"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/bookmarkImage2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="200dp"
+                        android:src="@drawable/bookmark" />
+
+                    <ImageView
+                        android:id="@+id/createNotesIcon1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/readbook_notes" />
+
+                    <ImageView
+                        android:id="@+id/bookmarkNotesList1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/bookmark_notes_list" />
+
+                    <TextView
+                        android:id="@+id/rightBookmarkTitle"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#94734f"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="300px"
+                        android:layout_height="fill_parent" >
+
+                        <ImageButton
+                            android:id="@+id/view_images"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="39dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gallery_icon" >
+                        </ImageButton>
+
+                        <ImageButton
+                            android:id="@+id/view_videos"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/view_images"
+                            android:scaleType="centerCrop"
+                          >
+                        </ImageButton>
+
+                        <ImageButton
+                            android:id="@+id/searchButton"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="5px"
+                            android:src="@drawable/search_icon" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bookLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="640dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/leftPageRelativeLayout"
+                android:layout_width="600dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="35dp" >
+
+                <LinearLayout
+                    android:id="@+id/leftScroll"
+                    android:layout_width="600dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/spiral_page_left"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp" >
+
+                    <cx.hell.android.lib.pagesview.PagesView
+                        android:id="@+id/left_pdfpageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:paddingBottom="35dp"
+                        android:paddingRight="20dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/leftPageNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="420dp"
+                    android:paddingLeft="30dp"
+                    android:text="2"
+                    android:textColor="#94734f"
+                    android:textSize="13sp"
+                    android:typeface="normal" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/spiral"
+                android:layout_width="38dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/spiral" />
+
+            <RelativeLayout
+                android:id="@+id/rightPageRelativeLayout02"
+                android:layout_width="600dp"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/rightScroll"
+                    android:layout_width="600dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/spiral_page_right"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp" >
+
+                    <cx.hell.android.lib.pagesview.PagesView
+                        android:id="@+id/right_pdfpageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="50dp"
+                        android:paddingBottom="35dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rightPageNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="420dp"
+                    android:paddingLeft="30dp"
+                    android:text="2"
+                    android:textColor="#94734f"
+                    android:textSize="13sp"
+                    android:typeface="normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/logoBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1100dp"
+                android:text="Powered by"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/pressmartLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:src="@drawable/pressmart_logo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchBlock"
+        android:layout_width="400px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40px"
+        android:background="#e7e5cf"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <SearchView
+            android:id="@+id/pageSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5px"
+            android:background="@drawable/search_border"
+            android:gravity="top"
+            android:iconifiedByDefault="false" >
+        </SearchView>
+
+        <ListView
+            android:id="@+id/pageSearchResults"
+            android:layout_width="wrap_content"
+            android:layout_height="540dp"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:background="@drawable/search_results_border"
+            android:clickable="true"
+            android:footerDividersEnabled="false"
+            android:textFilterEnabled="true" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/searchOptions"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5px"
+            android:background="#FFFFFF"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/googleSearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Google" >
+            </Button>
+
+            <Button
+                android:id="@+id/dictionaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dictionary" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

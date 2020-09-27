@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/faq_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LasallemenuButton"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/faq_top_bar"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/faq"
+        android:textSize="15sp"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <Button
+        android:id="@+id/btnPanel"
+        android:layout_width="1000dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/layoutPanel2"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:textSize="15sp"
+        android:text="@string/howTo"
+        android:textColor="#444444" />
+
+    
+        <ScrollView 
+            android:id="@+id/layoutPanel1"
+	        android:layout_width="1000dp"
+	        android:layout_height="150dp"
+	        android:layout_alignLeft="@+id/btnPanel"
+	        android:layout_alignRight="@+id/btnPanel"
+	        android:layout_below="@+id/btnPanel"
+	        android:layout_marginRight="12dp"
+	        android:background="@drawable/faq_inner_highlightbg"
+	        android:padding="10dp" >
+	        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            
+	            <TextView
+		            android:id="@+id/faqText1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/how_to_view"
+		            android:textColor="#000000"
+		            android:textIsSelectable="true"
+		            android:textSize="15sp"
+		            android:textStyle="bold" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingTop="5dp"
+		            android:text="@string/screenLandscape"
+		            android:textColor="#343434"
+		            android:textSize="15sp" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText3"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingTop="10dp"
+		            android:text="@string/download_books"
+		            android:textColor="#000000"
+		            android:textSize="15sp"
+		            android:textStyle="bold" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText4"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/go_to_library"
+		            android:textColor="#343434"
+		            android:textSize="15sp" >
+		        </TextView>
+             </LinearLayout>
+        </ScrollView>
+
+    <Button
+        android:id="@+id/btnPane2"
+        android:layout_width="1000dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/layoutPanel1"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/library"
+        android:textColor="#444444"
+        android:textSize="15sp" >
+
+    </Button>
+
+        
+        <ScrollView 
+            android:id="@+id/layoutPanel2"
+	        android:layout_width="1000dp"
+	        android:layout_height="140dp"
+	        android:layout_alignLeft="@+id/btnPane2"
+	        android:layout_alignRight="@+id/btnPane2"
+	        android:layout_below="@+id/btnPane2"
+	        android:layout_marginRight="12dp"
+	        android:background="@drawable/faq_inner_highlightbg"
+	        android:padding="10dp">
+	        <LinearLayout 
+	            android:orientation="vertical"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            <TextView
+	            android:id="@+id/faqText5"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/delete_books"
+	            android:textColor="#000000"
+	            android:textSize="15sp"
+	            android:textStyle="bold" >
+	        </TextView>
+	
+	        <TextView
+	            android:id="@+id/faqText6"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/myshelf"
+	            android:textColor="#343434"
+	            android:textSize="15sp" >
+	        </TextView>
+	
+	        <TextView
+	            android:id="@+id/faqText7"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="10dp"
+	            android:text="@string/isInternet"
+	            android:textColor="#000000"
+	            android:textSize="15sp"
+	            android:textStyle="bold" >
+	        </TextView>
+	
+	        <TextView
+	            android:id="@+id/faqText8"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/requiredInternet"
+	            android:textColor="#343434"
+	            android:textSize="15sp" >
+	        </TextView>
+	            
+	        </LinearLayout>
+            
+        </ScrollView>
+
+    <Button
+        android:id="@+id/btnPane3"
+        android:layout_width="1000dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/layoutPanel2"
+        android:layout_alignRight="@+id/layoutPanel2"
+        android:layout_below="@+id/layoutPanel2"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:text="@string/my_Account"
+        android:textColor="#444444" >
+
+    </Button>
+
+        
+        <ScrollView 
+            android:id="@+id/layoutPanel4"
+	        android:layout_width="190dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/btnPane4"
+	        android:layout_alignRight="@+id/btnPane3"
+	        android:layout_below="@+id/btnPane4"
+	        android:layout_marginRight="12dp"
+	        android:background="@drawable/faq_inner_highlightbg"
+	        android:padding="10dp" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	            <TextView
+		            android:id="@+id/faqText11"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/aboutPressmart"
+		            android:textColor="#000000"
+		            android:textSize="15sp"
+		            android:textStyle="bold" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText16"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/pressmart_gives"
+		            android:textColor="#343434"
+		            android:textSize="15sp" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText13"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:paddingTop="10dp"
+		            android:text="@string/contact"
+		            android:textColor="#000000"
+		            android:textSize="15sp"
+		            android:textStyle="bold" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText14"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/banjaraHills"
+		            android:textColor="#343434"
+		            android:textSize="15sp" >
+		        </TextView>
+	        </LinearLayout>
+        </ScrollView>
+    
+
+    <Button
+        android:id="@+id/btnPane4"
+        android:layout_width="1000dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/layoutPanel2"
+        android:layout_below="@+id/layoutPanel3"
+        android:background="@drawable/faq_inner_bg"
+        android:gravity="left"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/pressmart"
+        android:textColor="#444444" >
+
+    </Button>
+
+        
+        <ScrollView 
+	        android:id="@+id/layoutPanel3"
+	        android:layout_width="200dp"
+	        android:layout_height="60dp"
+	        android:layout_alignLeft="@+id/btnPane3"
+	        android:layout_alignRight="@+id/layoutPanel4"
+	        android:layout_below="@+id/btnPane3"
+	        android:background="@drawable/faq_inner_highlightbg"
+	        android:padding="10dp" >
+	         <LinearLayout
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content"
+	             android:orientation="vertical">
+	            <TextView
+		            android:id="@+id/faqText9"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/signOut"
+		            android:textColor="#000000"
+		            android:textSize="15sp"
+		            android:textStyle="bold" >
+		        </TextView>
+		
+		        <TextView
+		            android:id="@+id/faqText10"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/theMenu"
+		            android:textColor="#343434"
+		            android:textSize="15sp" >
+	        	</TextView>
+	        </LinearLayout>
+        </ScrollView>
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/image3"
+        android:layout_below="@+id/layoutPanel3"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/faq_drop_down" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/LasallemenuButton"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/menu_btn" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/btnPanel"
+        android:layout_alignRight="@+id/layoutPanel1"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/faq_drop_down" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/image1"
+        android:layout_below="@+id/layoutPanel1"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/faq_drop_down" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/image2"
+        android:layout_below="@+id/layoutPanel2"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/faq_drop_down" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/la_salle_logo" />
+
+</RelativeLayout>

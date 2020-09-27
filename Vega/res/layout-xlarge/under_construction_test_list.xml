@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tc_mainbg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tc_topbar"
+        android:measureAllChildren="true" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="119dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:id="@+id/header_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Test Creation Home Page"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/menu_underConstruction"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1200dp"
+            android:background="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/underconstruction_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/help" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/under_construction"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FrameLayout1"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/tc_contentholder_bg" >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/underconstruction_test_name_view"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="90dp"
+                android:text="@string/underconstruction_test_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/underconstruction_test_schedule_view"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="@string/underconstruction_sheduled_on"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/underconstruction_status_view"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="90dp"
+                android:text="@string/underconstruction_status"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/under_construction_test_list"
+            android:layout_width="760dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:divider="@drawable/leftmenu_divider"
+            android:visibility="visible" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/no_under_construction_tests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="312dp"
+            android:text="No tests"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/create_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/under_construction"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/add_new_test"
+        android:paddingLeft="20dp"
+        android:text="Create Test"
+        android:textColor="#000000" />
+
+</RelativeLayout>

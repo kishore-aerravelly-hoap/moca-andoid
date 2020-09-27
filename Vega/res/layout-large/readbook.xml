@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <fragment
+        android:id="@+id/pageFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.pearl.activities.ReadbookActivity$PageFragment" />
+    <!--
+            <fragment class="com.vega.activities.ReadbookActivity$HeaderFragment" android:id="@+id/headerFragment" android:background="#D0D0D0" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center|top" />	
+    -->
+
+    <fragment
+        android:id="@+id/footerFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_weight="0.04"
+        class="com.pearl.activities.ReadbookActivity$FooterFragment"
+        android:background="#D0D0D0" />
+
+</FrameLayout>

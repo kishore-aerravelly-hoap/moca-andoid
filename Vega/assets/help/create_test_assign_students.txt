@@ -1,0 +1,3 @@
+Select grade,subject and sections to get the students list.
+Click 'Select Students' to assign test to few students from the list provided.
+'Submit' will assign test to all the students.

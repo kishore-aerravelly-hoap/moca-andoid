@@ -1,0 +1,5 @@
+Select grade,subject and question type and click on the 'Download' button to fetch the questions from database.
+Select the questions you wish to import with the check boxes provided.
+Click on 'Import Questions' to import the questions.
+press and scroll on the list to view all the options in the Match the following/Ordering/Multiple choice questions
+Only the questions for which the test is published will be added to the question bank.

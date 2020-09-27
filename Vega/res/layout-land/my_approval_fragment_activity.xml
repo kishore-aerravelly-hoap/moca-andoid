@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/approval_frame_act"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp" >
+
+        <fragment
+            android:id="@+id/my_approval_list"
+            android:name="com.pearl.fragment.TeacherApprovalListFragment"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            class="com.pearl.fragment.TeacherAwaitingApprovalListFragment" />
+
+        <fragment
+            android:id="@+id/my_approval_exam"
+            android:name="com.pearl.fragment.AwaitingApprovalQuestionPaperFragment"
+            android:layout_width="930dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            class="com.pearl.fragment.AwaitingApprovalQuestionPaperFragment" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#defafc" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Awaiting Approvals"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/teacher_approval_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/examMenu"
+            android:layout_marginRight="55dp"
+            android:layout_toLeftOf="@+id/examMenu"
+            android:src="@drawable/help" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/la_salle_logo" />
+
+</RelativeLayout>

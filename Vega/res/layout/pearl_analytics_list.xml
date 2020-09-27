@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#262626" >
+
+        <ImageView
+            android:id="@+id/teacher_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1165dp"
+            android:src="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="119dp"
+            android:layout_height="85dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="Pearl Analytics List"
+            android:textColor="#ec8417"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ExpandableListView
+        android:id="@+id/analyticsList"
+        android:layout_width="700dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingTop="100dp"
+        android:background="@drawable/analytics_list_body"
+        android:divider="#3280d3"
+        android:groupIndicator="@null"
+        android:padding="20dp" />
+
+<!--     <ListView
+        android:id="@android:id/list"
+        android:layout_width="700dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/analytics_list_body"
+        android:divider="#3280d3"
+        android:padding="20dp" /> -->
+
+</LinearLayout>

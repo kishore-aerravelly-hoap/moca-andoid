@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fontDialogLayout"
+    android:layout_width="500dp"
+    android:layout_height="300dp"
+    android:background="#ffe4b5"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/fontText"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/feedback_edittext_bg"
+        android:text="Samreen"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/fontSelect"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone" />
+
+    <com.vega.android.ui.HorizontalListView
+        android:id="@+id/bgColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:cacheColorHint="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

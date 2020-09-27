@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+     <TextView
+        android:id="@+id/approvalGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Grade"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+     <TextView
+        android:id="@+id/approvalsection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/approvalGrade"
+        android:layout_alignBottom="@+id/approvalGrade"
+        android:layout_toRightOf="@+id/approvalGrade"
+        android:text="Section"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+      <TextView
+        android:id="@+id/approvalexamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/approvalsection"
+        android:layout_alignBottom="@+id/approvalsection"
+        android:layout_toRightOf="@+id/approvalsection"
+        android:text="Exam Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/approvalexpired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="E"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FF0000"
+        android:visibility="visible" />
+
+   
+
+   
+
+</RelativeLayout>

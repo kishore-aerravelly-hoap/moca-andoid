@@ -1,0 +1,2 @@
+Tap on the text area to select start and end dates.
+Minute in end date should be greater than the current minute

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/studentListFragment"
+        android:layout_width="280dp"
+        android:layout_marginTop="77dp"
+        android:layout_height="fill_parent"
+        class="com.pearl.fragment.EvaluationStudentListFragment" />
+
+    <fragment
+        android:id="@+id/AnswerSheetFragment"
+        android:layout_width="1050dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        class="com.pearl.fragment.ExamEvaluationSheetFragment" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbar" >
+        <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/la_salle_logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="8dp"
+            android:text="Evaluation"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/menu_btn" />
+
+        <ImageView
+            android:id="@+id/evaluation_help"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@+id/examMenu"
+            android:src="@drawable/help" />
+    </RelativeLayout>
+
+</RelativeLayout>

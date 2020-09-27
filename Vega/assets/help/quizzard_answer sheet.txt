@@ -1,0 +1,2 @@
+Swipe on the screen to navigate through the questions.
+Clicking on the arrow after name displays your complete name if length is greater than 18 characters.

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="78dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="500dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/actionbar_transbg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/actionbar_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/actionbar_gridicon"
+            android:textColor="@android:color/white" >
+        </Button>
+
+        <Button
+            android:id="@+id/notice_board"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/actionbar_menu_button"
+            android:background="@drawable/actionbar_noticeboardicon" />
+
+        <Button
+            android:id="@+id/attendance"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/notice_board"
+            android:background="@drawable/dash_schedule_img"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/attendance"
+            android:background="@drawable/dash_chat_img" />
+
+        <Button
+            android:id="@+id/note_book"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/chat"
+            android:background="@drawable/dash_notebook_img" />
+
+        <Button
+            android:id="@+id/quiz"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/note_book"
+            android:background="@drawable/dash_quizzard_img" />
+
+        <Button
+            android:id="@+id/e_reader"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/quiz"
+            android:background="@drawable/dash_ereader_img" />
+
+        <Button
+            android:id="@+id/feed_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/e_reader"
+            android:background="@drawable/dash_feedback_img" />
+
+        <Button
+            android:id="@+id/faqs"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/feed_back"
+            android:background="@drawable/dash_faq_img" />
+
+        <Button
+            android:id="@+id/options_button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/signout"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/faqs"
+            android:background="@drawable/options_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/server_status_read"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_alignLeft="@+id/signout"
+            android:visibility="gone"
+            android:layout_marginLeft="41dp" />
+
+        <Button
+            android:id="@+id/actionbar_read_book_analytics"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/server_status_read"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/faqs"
+            android:background="@drawable/dash_analytics_img" />
+         
+         <Button
+                android:id="@+id/signout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignTop="@+id/actionbar_read_book_analytics"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/actionbar_read_book_analytics"
+                android:background="@drawable/logout" />
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>

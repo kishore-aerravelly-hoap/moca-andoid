@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainbg" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbar" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="480dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Awaiting Evaluation List"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="23sp" />
+        
+        <ImageView
+            android:id="@+id/teacher_approval_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:id="@+id/menu_button_eval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/menu_btn" />
+
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="900dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/awating_listbg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/exam"
+                android:layout_width="198dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="60dp"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="70dp"
+                android:text="@string/exam"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exam_category"
+                android:layout_width="178dp"
+                android:layout_height="fill_parent"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="Category"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="70dp"
+                android:text="@string/subject"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/exam_duration"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="20dp"
+                android:text="@string/exam_held_on"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="@string/grade"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/awaiting_evaluation_section_label"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:drawableBottom="@drawable/exam_grid_dark"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="Section"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/awaiting_evaluation_list"
+            android:layout_width="1063dp"
+            android:layout_height="450dp"
+            android:divider="#9CBAFA"
+            android:dividerHeight="2px"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+        </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/la_salle_logo" />
+
+    <ImageView
+        android:id="@+id/refreshevaluationList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginRight="92dp"
+        android:src="@drawable/refresh" />
+
+</RelativeLayout>

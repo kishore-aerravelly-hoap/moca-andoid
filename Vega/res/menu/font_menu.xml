@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/font_level1"
+        android:icon="@drawable/font"
+        android:title="Level 1"/>
+    <item
+        android:id="@+id/font_level2"
+        android:icon="@drawable/font_level2"
+        android:title="Level 2"/>
+    <item
+        android:id="@+id/font_level3"
+        android:icon="@drawable/font_level3"
+        android:title="Level 3"/>
+    <item
+        android:id="@+id/font_level4"
+        android:icon="@drawable/font_level4"
+        android:title="Level 4"/>
+</group>
+</menu>

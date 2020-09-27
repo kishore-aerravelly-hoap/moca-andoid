@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sentComments"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/receivedComments"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sentcomments_portion"
+        android:text="Show Sent comments"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#444"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/receivedComments"
+        android:layout_width="110dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/sentComments"
+        android:background="@drawable/receivedcomments_portion"
+        android:text="Show Received comments "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#444"
+        android:textSize="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teacher_exam"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/students_right_divider"
+        android:cacheColorHint="#AAC6F4"
+        android:listSelector="@drawable/selected_bg"
+        android:scrollbars="vertical"
+        android:smoothScrollbar="true"
+        android:visibility="visible"
+        android:textColor="#373637" />
+
+    <TextView
+        android:id="@+id/rejected_tests_list_no_exams_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444"
+        android:text="No exams for you"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

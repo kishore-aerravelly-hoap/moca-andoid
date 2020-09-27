@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rejected_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp" >
+
+        <fragment
+            android:id="@+id/rejected_test_lists_fragment"
+            android:name="com.pearl.fragment.RejectedExamsFragment"
+            android:layout_width="180dp"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/rejected_test_questionPaper_fragment"
+            android:name="com.pearl.fragment.RejectedTestQuestionPaperFragment"
+            android:layout_width="480dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/rejected_comments_fragment"
+            android:layout_toRightOf="@+id/rejected_test_lists_fragment" />
+
+        <fragment
+            android:id="@+id/rejected_comments_fragment"
+            android:name="com.pearl.fragment.RejectedComments"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#defafc" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Rejected Tests"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/rejected_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/examMenu"
+            android:src="@drawable/help" />
+
+        <Button
+            android:id="@+id/examMenu"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/menu_btn" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/la_salle_logo"/>
+
+</RelativeLayout>

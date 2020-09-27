@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:autoAdvanceViewId="@anim/grow_from_bottomright_to_topleft"
+    android:initialLayout="@layout/widget_layout"
+    android:minHeight="300dp"
+    android:minWidth="300dp"
+    android:resizeMode="none"
+    android:updatePeriodMillis="10000" >
+
+</appwidget-provider>

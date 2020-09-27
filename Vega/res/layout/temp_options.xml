@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="#c6aadb"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/attConfigAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:paddingTop="10dp"
+        android:text="@string/ConfigChanges"
+        android:textColor="#c40b0b"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="43dp"
+        android:text="Base Path"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" >
+    </TextView>
+
+    <Button
+        android:id="@+id/saveTempOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="save" >
+    </Button>
+
+    <EditText
+        android:id="@+id/basePath"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/textView4" >
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+</RelativeLayout>

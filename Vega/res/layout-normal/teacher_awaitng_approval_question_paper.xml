@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Color set for the GUI designer -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/awaiting_myapproval_examName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Section"
+        android:textSize="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/awaiting_myapproval_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/awaiting_myapproval_examName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical|center_horizontal"
+         android:textSize="10dp"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_awaiting_approval"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:visibility="gone" >
+
+        <!--
+     <TextView
+        android:id="@+id/awaiting_myapproval_Marks_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+        android:text="Total Marks              :"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+     
+    
+        <TextView
+          android:id="@+id/awaiting_myapproval_startDate_view1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/awaiting_myapproval_Marks"
+          android:layout_alignBottom="@+id/awaiting_myapproval_Marks"
+          android:layout_marginLeft="316dp"
+          android:layout_toRightOf="@+id/awaiting_myapproval_Marks"
+          android:text="Start Date :"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+
+      <TextView
+          android:id="@+id/awaiting_myapproval_Marks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/awaiting_myapproval_Marks_view1"
+          android:layout_alignBottom="@+id/awaiting_myapproval_Marks_view1"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/awaiting_myapproval_Marks_view1"
+          android:text="100"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+
+      <TextView
+          android:id="@+id/awaiting_myapproval_questions"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/awaiting_myapproval_questions_view1"
+          android:layout_alignBottom="@+id/awaiting_myapproval_questions_view1"
+          android:layout_toLeftOf="@+id/awaiting_myapproval_startDate_view1"
+          android:text="100"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+        <TextView
+          android:id="@+id/awaiting_myapproval_endDate_view1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/awaiting_myapproval_startDate_view1"
+          android:layout_below="@+id/awaiting_myapproval_startDate_view1"
+          android:text="End Date   :"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+
+      <TextView
+          android:id="@+id/awaiting_myapproval_endDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/awaiting_myapproval_endDate_view1"
+          android:layout_alignBottom="@+id/awaiting_myapproval_endDate_view1"
+          android:layout_alignLeft="@+id/awaiting_myapproval_startDate"
+          android:text="100"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+
+      <TextView
+          android:id="@+id/awaiting_myapproval_questions_view1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/awaiting_myapproval_endDate_view1"
+          android:layout_alignBottom="@+id/awaiting_myapproval_endDate_view1"
+          android:layout_alignLeft="@+id/awaiting_myapproval_Marks_view1"
+          android:text="Total Questions      :"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+
+      <TextView
+          android:id="@+id/awaiting_myapproval_startDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/awaiting_myapproval_endDate"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/awaiting_myapproval_startDate_view1"
+          android:text="100"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="#000000" />
+     
+     </RelativeLayout>
+
+     <ImageView
+        android:id="@+id/awaiting_myapproval_imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/awaiting_myapproval_endDate"
+        android:layout_marginRight="160dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="3dp"
+        android:src="@drawable/question_details_divider" />
+        -->
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_Marks_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Marks"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_questions_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Questions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_Marks_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_questions_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_Marks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_startDate_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_endDate_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_startDate_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_endDate_colon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/awaiting_myapproval_endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="10dp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/awaiting_myapproval_ExamListToBeApproved"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.90"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

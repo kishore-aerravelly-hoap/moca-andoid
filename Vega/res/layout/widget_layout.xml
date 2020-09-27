@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dip"
+    android:background="@drawable/myshape"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/myshape_heading"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/la_salle_logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/widgetHeading"
+            style="@android:style/TextAppearance.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_margin="4dip"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Pearl says you "
+            android:textSize="26sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WidgetLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.11"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/widgetMsgCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Messages"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetNoticeCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Notice"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetEventCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Event"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetQuizCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetTestApproveCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="approve"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetTestPublishCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetEvaluationCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetReultsPublishCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetViweAnswerSheetCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quiz"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetAttendanceCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="attendance"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetBooksCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Books"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/widgetAddInfoCount"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="add info"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noNotificationsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/NoNotifications"
+            style="@style/styleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No new notificatioins"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/loggedOutotification"
+            style="@style/styleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="are not logged in" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/NoNetworkNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Check your internet connection"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/wait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/wait_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Please wait while Pearl get new messages..."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:visibility="gone" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

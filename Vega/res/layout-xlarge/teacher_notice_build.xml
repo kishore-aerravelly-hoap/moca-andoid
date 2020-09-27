@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f343B"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="600dp"
+        android:layout_height="650dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/RelativeLayout11"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/light" >
+
+        <RadioGroup
+            android:id="@+id/create_notice_sendto_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+            <RadioButton
+                android:id="@+id/radio_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:text="@string/refresh_button_above_to_downlaod_Exam_List_ALL"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/radio_teachers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:text="Faculty"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/radio_sections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="Grade-Sections"
+                android:textColor="#ffffff" />
+
+            <RadioButton
+                android:id="@+id/radio_parents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="@string/parents"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/send_notice"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:onClick="sendNoticeOnClick"
+            android:text="@string/submit_notice" />
+
+        <GridView
+            android:id="@+id/spinner_selector"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_above="@+id/send_notice"
+            android:layout_alignParentLeft="true"
+            android:fastScrollEnabled="true"
+            android:numColumns="auto_fit" />
+
+        <CheckBox
+            android:id="@+id/noitce_checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinner_selector"
+            android:layout_alignLeft="@+id/create_notice_sendto_selection"
+            android:text="@string/check_all"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/notice_uncheckAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/noitce_checkAll"
+            android:layout_alignRight="@+id/create_notice_sendto_selection"
+            android:layout_marginRight="50dp"
+            android:text="@string/uncheck_all"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient" >
+
+        <TextView
+            android:id="@+id/exam_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="520dp"
+            android:text="@string/create_notice"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="119dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/la_salle_logo" />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="38dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="1200dp"
+            android:background="@drawable/menu_btn" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout11"
+        android:layout_width="570dp"
+        android:layout_height="650dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_layout"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="08px"
+        android:background="@drawable/light" >
+
+        <EditText
+            android:id="@+id/create_notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/title_max_150_characters"
+            android:maxLength="150"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/create_notice_message"
+            android:layout_width="match_parent"
+            android:layout_height="456dp"
+            android:layout_below="@+id/create_notice_title"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="@string/message_max_1000_characters"
+            android:maxLength="1000"
+            android:textColor="#ffffff"
+            android:textColorHint="#000" />
+
+        <TextView
+            android:id="@+id/create_notice_date_and_time"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/create_notice_message"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="73dp"
+            android:hint="@string/due_date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/create_notice_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/create_notice_date_and_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:onClick="calenderViewOnClick"
+            android:src="@drawable/calender" />
+    </RelativeLayout>
+
+</RelativeLayout>

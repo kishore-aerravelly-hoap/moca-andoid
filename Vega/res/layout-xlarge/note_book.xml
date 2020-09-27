@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frags"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nb_search_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="119dp"
+        android:layout_height="85dp"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/la_salle_logo" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="860dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <com.pearl.android.ui.HorizontalListView
+            android:id="@+id/Subject_selection_Horizontal_list"
+            android:layout_width="807dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="48dp"
+            android:background="#aeaa30"
+            android:cacheColorHint="#333300"
+            android:soundEffectsEnabled="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="217dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1" >
+
+        <ListView
+            android:id="@+id/noteBookList"
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="65dp"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/nb_search_list_line" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/the_frag"
+        android:layout_width="750dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="55dp"
+        class="com.tresbu.studentview.TestFragment" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/the_frag"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/the_frag"
+        android:layout_alignTop="@+id/the_frag"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BDBD00" >
+
+            <Button
+                android:id="@+id/add_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignBaseline="@+id/saveNotes"
+                android:layout_alignBottom="@+id/saveNotes"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/nb_search_add_btn" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/saveNotes"
+                android:layout_alignRight="@+id/add_notes"
+                android:layout_below="@+id/add_notes"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/nb_search_paper_bg" >
+
+                <EditText
+                    android:id="@+id/noteBookText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="470dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="21dp"
+                    android:gravity="top"
+                    android:hint="@string/notebook_hint"
+                    android:paddingLeft="20dp"
+                    android:textColor="#666666"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold"
+                    android:typeface="normal" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignLeft="@+id/noteBookText"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/transparent_btn"
+                    android:text="Previous" />
+
+                <Button
+                    android:id="@+id/nxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignBaseline="@+id/prev"
+                    android:layout_alignBottom="@+id/prev"
+                    android:layout_alignRight="@+id/noteBookText"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/transparent_btn"
+                    android:text="Next" />
+
+                <ImageView
+                    android:id="@+id/del_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/prev"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/delete_note_book"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Subject_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/add_notes"
+                android:layout_marginLeft="140dp"
+                android:layout_toRightOf="@+id/saveNotes"
+                android:text="@string/subject_desc"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#5b5801" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/NoteBook_menuButton"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/menu_btn" />
+
+    <ListView
+        android:id="@+id/noteBookSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/noteBookSearch"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:divider="#000000"
+        android:dividerHeight="2px" />
+
+    <SearchView
+        android:id="@+id/noteBookSearch"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/the_frag"
+        android:layout_toRightOf="@+id/the_frag"
+        android:background="#C3BC38"
+        android:drawableBottom="@drawable/nb_search_list_line"
+        android:drawableRight="@drawable/nb_search_icon"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search" />
+
+    <LinearLayout
+        android:id="@+id/noteBooksearchOptions"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/notesGoogleSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notebok_searchgooglelabel" />
+
+        <Button
+            android:id="@+id/notesDictionaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="@string/notebook_dictionarylabel" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/notebook_refresh"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/NoteBook_menuButton"
+        android:layout_alignLeft="@+id/noteBookSearch"
+        android:layout_marginLeft="55dp"
+        android:src="@drawable/refresh" />
+
+    <TextView
+        android:id="@+id/Subject_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/the_frag"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#5b5801" />
+
+    <ImageView
+        android:id="@+id/notebook_help"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notebook_refresh"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/NoteBook_menuButton"
+        android:src="@drawable/help" />
+
+</RelativeLayout>

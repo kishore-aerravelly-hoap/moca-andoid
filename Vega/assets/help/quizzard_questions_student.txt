@@ -1,0 +1,2 @@
+Click on the 'star' button to navigate through the marked questions.
+Clicking on the arrow after name displays your complete name if length is greater than 18 characters
